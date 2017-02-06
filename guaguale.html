@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    p {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        font-size: 50px;
+    }
+    
+    canvas {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /*background-color: #ccc;*/
+    }
+    </style>
+</head>
+
+<body>
+    <p>特等奖</p>
+    <canvas id="canvas" width="200" height="100">
+    </canvas>
+    <script type="text/javascript">
+    window.onload = function() {
+
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+            context.fillStyle = 'lightgray';
+            context.fillRect(0,0,200,100)
+        // 在canvas 上实现 onmouseover onmouseout onmouseup
+        canvas.onmousedown = function(e) {
+            var ev = e || window.event;
+            var x = ev.clientX;
+            var y = ev.clientY;
+
+            context.globalCompositeOperation = 'destination-out';
+            // context.
+
+            context.arc(x, y, 10, 0, Math.PI * 2, false);
+            context.fillStyle = 'green';
+            context.fill();
+            canvas.onmousemove = function(e) {
+                var ev = e || window.event;
+                var x = ev.clientX;
+                var y = ev.clientY;
+
+                context.globalCompositeOperation = 'destination-out';
+                // context.
+
+                context.arc(x, y, 10, 0, Math.PI * 2, false);
+                context.fillStyle = 'green';
+                context.fill();
+            }
+            canvas.onmouseup = function() {
+                this.onmousemove = null;
+                this.onmouseup = null;
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>

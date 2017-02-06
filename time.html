@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .div {
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        margin: 100px auto;
+        background: url(img/IMG_20161231_145715.jpg) no-repeat;
+        background-size: 400px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <canvas id="canvas4" width="400" height="400">
+        </canvas>
+    </div>
+    <script type="text/javascript">
+    window.onload = function() {
+
+        var canvas = document.getElementById('canvas4');
+        var context = canvas.getContext('2d');
+
+        var h = null;
+        var m = null;
+        var s = null;
+
+        function drawClock() {
+            // 使用坐标系的旋转来完成表盘的绘制
+            context.save();
+            context.translate(200, 200); //移动坐标系到中心
+            context.rotate(-Math.PI / 2);
+
+            // 绘制圆盘
+            context.beginPath();
+            context.arc(0, 0, 120, 0, 2 * Math.PI, false);
+            context.strokeStyle = 'red';
+            context.lineWidth = 5;
+            context.stroke();
+
+            // 小时的刻度
+            context.beginPath();
+            for (var i = 0; i < 12; i++) {
+                context.rotate(Math.PI / 6);
+                context.moveTo(110, 0);
+                context.lineTo(120, 0);
+                context.strokeStyle = 'black';
+                context.lineWidth = 5;
+                context.stroke();
+
+            }
+            // 分钟的刻度
+            context.beginPath();
+            for (var j = 0; j < 60; j++) {
+                context.rotate(Math.PI / 30);
+                context.moveTo(115, 0);
+                context.lineTo(120, 0);
+                context.strokeStyle = 'black';
+                context.lineWidth = 1;
+                context.stroke();
+
+            }
+
+            context.restore();
+        }
+        setInterval(updataTime, 1000);
+
+        function updataTime() {
+            var date = new Date();
+            h = date.getHours();
+            m = date.getMinutes();
+            s = date.getSeconds();
+            h = checkTime(h);
+            m = checkTime(m);
+            s = checkTime(s);
+            context.clearRect(0, 0, 400, 400)
+            drawClock();
+            drawTimeText();
+            drawHour();
+            drawMinuters();
+            drawSeconds();
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                }
+                return i
+            }
+
+        }
+
+        function drawTimeText() {
+            var str = h + ':' + m + ':' + s;
+            context.font = '30px bold Arial';
+            context.textAlign = 'center';
+            context.textBaseline = 'middle';
+            context.fillText(str, 200, 20, 400);
+        }
+
+        function drawHour() {
+            context.save();
+            context.translate(200, 200);
+            context.rotate(-Math.PI / 2);
+            context.beginPath();
+            var r = h * Math.PI / 6 + m / 60 * Math.PI / 6 + s / 3600 * Math.PI / 6;
+            context.rotate(r);
+            // 绘制
+            context.moveTo(-5, 0);
+            context.lineTo(50, 0);
+            context.lineWidth = 8;
+            context.strokeStyle = 'red';
+            context.stroke();
+            context.restore();
+
+        }
+
+        function drawMinuters() {
+            context.save();
+            context.translate(200, 200);
+            context.rotate(-Math.PI / 2);
+            context.beginPath();
+            var r = m * Math.PI / 30 + s / 60 * Math.PI / 30;
+            context.rotate(r);
+            // 绘制
+            context.moveTo(-5, 0);
+            context.lineTo(100, 0);
+            context.lineWidth = 5;
+            context.strokeStyle = 'bule';
+            context.stroke();
+            context.restore();
+
+        }
+
+        function drawSeconds() {
+            context.save();
+            context.translate(200, 200);
+            context.rotate(-Math.PI / 2);
+            context.beginPath();
+            var r = s * Math.PI / 30;
+            context.rotate(r);
+            // 绘制
+            context.moveTo(-5, 0);
+            context.lineTo(100, 0);
+            context.lineWidth = 2;
+            context.strokeStyle = 'bule';
+            context.stroke();
+            context.restore();
+
+        }
+    }
+    </script>
+</body>
+
+</html>
