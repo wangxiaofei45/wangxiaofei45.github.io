@@ -15,9 +15,13 @@
     .div {
         width: 400px;
         height: 400px;
+        box-sizing: border-box;
         border: 1px solid black;
+        border-radius: 50%;
         margin: 100px auto;
-        background: url(img/IMG_20161231_145715.jpg) no-repeat;
+        /*background-color: rgba(0,0,0,0.1);*/
+        background-image: url(img/IMG_20161231_145715.jpg);
+        opacity:0.5;
         background-size: 400px;
     }
     </style>
@@ -46,8 +50,8 @@
 
             // 绘制圆盘
             context.beginPath();
-            context.arc(0, 0, 120, 0, 2 * Math.PI, false);
-            context.strokeStyle = 'red';
+            context.arc(0, 0, 197, 0, 2 * Math.PI, false);
+            context.strokeStyle = 'green';
             context.lineWidth = 5;
             context.stroke();
 
@@ -55,9 +59,9 @@
             context.beginPath();
             for (var i = 0; i < 12; i++) {
                 context.rotate(Math.PI / 6);
-                context.moveTo(110, 0);
-                context.lineTo(120, 0);
-                context.strokeStyle = 'black';
+                context.moveTo(190, 0);
+                context.lineTo(200, 0);
+                context.strokeStyle = 'yellow';
                 context.lineWidth = 5;
                 context.stroke();
 
@@ -66,8 +70,8 @@
             context.beginPath();
             for (var j = 0; j < 60; j++) {
                 context.rotate(Math.PI / 30);
-                context.moveTo(115, 0);
-                context.lineTo(120, 0);
+                context.moveTo(195, 0);
+                context.lineTo(200, 0);
                 context.strokeStyle = 'black';
                 context.lineWidth = 1;
                 context.stroke();
@@ -107,7 +111,7 @@
             context.font = '30px bold Arial';
             context.textAlign = 'center';
             context.textBaseline = 'middle';
-            context.fillText(str, 200, 20, 400);
+            context.fillText(str, 200, 50, 400);
         }
 
         function drawHour() {
@@ -120,8 +124,8 @@
             // 绘制
             context.moveTo(-5, 0);
             context.lineTo(50, 0);
-            context.lineWidth = 8;
-            context.strokeStyle = 'red';
+            context.lineWidth = 4;
+            context.strokeStyle = '#6c92ee';
             context.stroke();
             context.restore();
 
@@ -138,7 +142,7 @@
             context.moveTo(-5, 0);
             context.lineTo(100, 0);
             context.lineWidth = 5;
-            context.strokeStyle = 'bule';
+            context.strokeStyle = '#6c92ee';
             context.stroke();
             context.restore();
 
@@ -155,7 +159,7 @@
             context.moveTo(-5, 0);
             context.lineTo(100, 0);
             context.lineWidth = 2;
-            context.strokeStyle = 'bule';
+            context.strokeStyle = '#6c92ee';
             context.stroke();
             context.restore();
 
