@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src='jquery-3.1.1.min.js'></script>
+    <style type="text/css" media="screen">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .clearfix:after {
+        content: '';
+        overflow: hidden;
+        clear: both;
+        display: block;
+        height: 0px;
+    }
+    
+    .box {
+        margin: 100px auto;
+        width: 760px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .box .zhangshiul {
+        position: relative;
+        height: 300px;
+    }
+    
+    .box .zhangshiul li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        list-style: none;
+        width: 760px;
+        height: 300px;
+    }
+    
+    .box .zhangshiul li:nth-child(1) {
+        background: url(img/bg1.jpg);
+    }
+    
+    .box .zhangshiul li:nth-child(2) {
+        background: url(img/bg2.jpg);
+    }
+    
+    .box .zhangshiul li:nth-child(3) {
+        background: url(img/bg3.jpg);
+    }
+    
+    .box .zhangshiul li:nth-child(4) {
+        background: url(img/bg4.jpg);
+    }
+    
+    .box .zhangshiul li:nth-child(5) {
+        background: url(img/bg5.jpg);
+    }
+    
+    .box .gundongul {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .gundongul li {
+        list-style: none;
+        width: 30px;
+        height: 30px;
+        float: left;
+        background-color: red;
+        margin-left: 5px;
+    }
+    
+    .box .gundongul .active {
+        background-color: yellow;
+    }
+    
+    .box .zhangshiul li img:nth-child(2) {
+        position: absolute;
+        left: 0px;
+        top: -300px;
+        /*z-index: 300*/
+    }
+    
+    .box .zhangshiul li img:nth-child(1) {
+        position: absolute;
+        left: 0px;
+        top: 300px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul class="zhangshiul">
+            <li>
+                <img class="img1" src="img/con1.png" alt="">
+                <img class="img2" src="img/text1.png" alt="">
+            </li>
+            <li>
+                <img class="img1" src="img/con2.png" alt="">
+                <img class="img2" src="img/text2.png" alt="">
+            </li>
+            <li>
+                <img class="img1" src="img/con3.png" alt="">
+                <img class="img2" src="img/text3.png" alt="">
+            </li>
+            <li>
+                <img class="img1" src="img/con4.png" alt="">
+                <img class="img2" src="img/text4.png" alt="">
+            </li>
+            <li>
+                <img class="img1" src="img/con5.png" alt="">
+                <img class="img2" src="img/text5.png" alt="">
+            </li>
+        </ul>
+        <ul class="gundongul">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+
+            var index = 0;
+            var timer = null;
+            function dolunbo(){
+
+            timer = setInterval(function() {
+                index++;
+                if (index == 5) {
+                    index = 0;
+                }
+                show();
+            }, 2000);
+            };
+            dolunbo();
+
+
+            function show() {
+                $('.box .zhangshiul li').eq(index).fadeIn(1000).siblings().fadeOut();
+                $('.box .gundongul li').eq(index).addClass('active').siblings().removeClass('active');
+
+
+                $('.box .zhangshiul li').eq(index).find('.img1').animate({"top": "0px"}, 1000, function() {
+                    $('.box .zhangshiul li').eq(index).find('.img2').animate({
+                        "top": "0px"
+                    });
+                });
+                $('.box .zhangshiul li').not(':eq('+index+')').find('.img1').css({'top':'300px'});
+                $('.box .zhangshiul li').not(':eq('+index+')').find('.img2').css({'top':'-300px'});
+            }
+
+            // 停掉定时器
+            $('.box .gundongul li').mouseover(function(){
+                index = $(this).index();
+                show();
+                clearInterval(timer);
+            })
+            $('.box .gundongul li').mouseout(function(){
+                index = $(this).index();
+                dolunbo();
+            })
+            
+
+
+
+        }) //最外面的function
+    </script>
+</body>
+
+</html>
