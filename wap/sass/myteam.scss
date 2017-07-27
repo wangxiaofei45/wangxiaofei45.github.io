@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+body {
+    width: px2rem(750);
+    background-color: #f5f5f5;
+}
+
+.my_team {
+    .header_fixt {
+        position: fixed;
+        left: px2rem(0);
+        top: px2rem(0);
+    .header {
+        width: px2rem(750);
+        height: px2rem(88);
+        background-color: #ce9100;
+        border-bottom: px2rem(1) solid #959595;
+        .header_container {
+            width: px2rem(700);
+            height: px2rem(88);
+            font-size: px2rem(34);
+            color: #FFFFFF;
+            .header_list1 {
+                width: px2rem(100);
+                text-align: center;
+            }
+            .header_list2 {
+                width: px2rem(500);
+                text-align: center;
+            }
+        }
+    }
+    .user_manager {
+        width: px2rem(750);
+        height: px2rem(170);
+        background-color: #ce9100;
+        .user_container {
+            width: px2rem(626);
+            img {
+                width: px2rem(116);
+                height: px2rem(116);
+            }
+            .user_name {
+                width: px2rem(230);
+                .name1,
+                .name2 {
+                    width: px2rem(230);
+                }
+                .name1 {
+                    font-size: px2rem(25);
+                    color: #dfcea5;
+                    text-align: center;
+                }
+                .name2 {
+                    font-size: px2rem(30);
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+            .area {
+                width: px2rem(280);
+                .area1,
+                .area2 {
+                    width: px2rem(280);
+                }
+                .area1 {
+                    font-size: px2rem(25);
+                    color: #dfcea5;
+                    text-align: center;
+                }
+                .area2 {
+                    font-size: px2rem(30);
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    }
+    
+    .team {
+        width: px2rem(750);
+        height: px2rem(68);
+        background-color: #FFFFFF;
+        font-size: px2rem(28);
+        color: #333333;
+        .team_lest {
+            text-align: center;
+            width: px2rem(180);
+        }
+    }
+}
+.team_container {
+    display: none;
+    margin-top: px2rem(326);
+    width: px2rem(750);
+    .empty {
+        display: flex;
+        justify-content: center;
+        width: px2rem(750);
+        img {
+            width: px2rem(400);
+            height: px2rem(200);
+            margin-top: px2rem(212);
+        }
+    }
+    .empty_measege{
+        width: px2rem(750);
+        margin-top: px2rem(40);
+        font-size: px2rem(30);
+        color: #cfcfcf;
+        text-align: center;
+    }
+}
+ #my_team {
+        margin-top: px2rem(326);
+        margin-bottom: px2rem(30);
+        .invitation_container {
+            width: px2rem(750);
+            color: #666666;
+            .team_lest {
+                height: px2rem(68);
+                line-height: px2rem(68);
+                font-size: px2rem(28);
+                color: #333333;
+                text-align: center;
+                width: px2rem(180);
+            }
+        }
+    }
+#my_team .invitation_container:nth-child(2n) {
+        background-color: #FFFFFF;
+    }
+#my_team .invitation_container:nth-child(2n+1) {
+        background-color: #F5F5F5;
+    }
+.myteamfooter{
+    position: fixed;
+    bottom: px2rem(0);
+    left: px2rem(0);
+    width: px2rem(750);
+    line-height: px2rem(30);
+    height: px2rem(30);
+    text-align: center;
+    background-color: #9fa0a0;
+    font-size: px2rem(20);
+    color: #FF0000;
+}

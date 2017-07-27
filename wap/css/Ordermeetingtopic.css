@@ -1,0 +1,103 @@
+body {
+  width: 16rem;
+  background-color: #f5f5f5;
+  overflow: hidden; }
+  body img {
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    width: 16rem;
+    height: 23.488rem; }
+
+.hezi {
+  z-index: 100;
+  background-color: #dcdcdc;
+  margin-top: 9.81333rem;
+  width: 16rem;
+  height: 19.2rem;
+  position: relative; }
+  .hezi .box_containerss {
+    position: absolute;
+    left: 50%;
+    margin-left: -6.93333rem;
+    margin-top: 1.06667rem;
+    background-color: #FFFFFF;
+    width: 13.86667rem;
+    height: 13.44rem; }
+    .hezi .box_containerss img {
+      width: 4.05333rem;
+      height: 4.05333rem;
+      position: absolute;
+      left: 50%;
+      margin-left: -2.02667rem;
+      margin-top: -2.02667rem; }
+    .hezi .box_containerss .list1 {
+      width: 11.73333rem;
+      height: 5.54667rem;
+      margin-left: 1.06667rem;
+      border-bottom: 0.02133rem dashed #a6a6a6; }
+      .hezi .box_containerss .list1 .list1_container {
+        padding-top: 2.24rem; }
+      .hezi .box_containerss .list1 .changecolor {
+        color: #d08f00; }
+      .hezi .box_containerss .list1 div {
+        font-size: 0.64rem; }
+    .hezi .box_containerss .list2 {
+      width: 11.73333rem;
+      height: 2.98667rem;
+      margin-left: 1.06667rem;
+      border-bottom: 0.02133rem solid #a6a6a6; }
+      .hezi .box_containerss .list2 .list2_container {
+        padding-top: 0.42667rem; }
+      .hezi .box_containerss .list2 .changecolor {
+        color: #d08f00; }
+      .hezi .box_containerss .list2 div {
+        font-size: 0.64rem;
+        height: 1.06667rem;
+        line-height: 1.06667rem; }
+    .hezi .box_containerss .list3 {
+      width: 11.73333rem;
+      height: 4.90667rem;
+      margin-left: 1.06667rem; }
+      .hezi .box_containerss .list3 .list3_container {
+        padding-top: 0.42667rem; }
+      .hezi .box_containerss .list3 .changecolor {
+        color: #d08f00; }
+      .hezi .box_containerss .list3 div {
+        font-size: 0.64rem;
+        height: 1.06667rem;
+        line-height: 1.06667rem; }
+    .hezi .box_containerss .ciecle {
+      width: 0.768rem;
+      height: 0.768rem;
+      border-radius: 50%;
+      background-color: #dcdcdc; }
+    .hezi .box_containerss .circle1 {
+      position: absolute;
+      left: -0.384rem;
+      top: 5.16267rem; }
+    .hezi .box_containerss .circle2 {
+      position: absolute;
+      left: 13.44rem;
+      top: 5.16267rem; }
+    .hezi .box_containerss .circle3 {
+      position: absolute;
+      left: -0.384rem;
+      top: 8.14933rem; }
+    .hezi .box_containerss .circle4 {
+      position: absolute;
+      left: 13.44rem;
+      top: 8.14933rem; }
+  .hezi button {
+    position: absolute;
+    top: 15.57333rem;
+    left: 50%;
+    margin-left: -6.4rem;
+    width: 12.8rem;
+    height: 1.70667rem;
+    color: #FFFFFF;
+    background-color: #cd9300;
+    border-radius: 0.42667rem;
+    outline: none; }
+
+/*# sourceMappingURL=Ordermeetingtopic.css.map */

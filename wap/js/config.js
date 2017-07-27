@@ -1,0 +1,13 @@
+var SiteUrl = "http://zlin.test.com/imall";
+var ApiUrl = "http://zlin.test.com/mobile";
+var WapSiteUrl = "http://zlin.test.com/wap";
+var WxappSiteUrl = "http://zlin.test.com/wxapp";
+var IOSSiteUrl = "https://itunes.apple.com/us/app/";
+var AndroidSiteUrl = "http://zlin.test.com/data/upload/app/download/qcmmt.apk";
+var WeiXinOauth = true;
+var pagesize = 10;
+var default_store_id = 2; //101
+var ShowMainMenu = false;
+var ShowMainGlobalNav = true;
+var WeiXinOauth = true;
+var dev=false;

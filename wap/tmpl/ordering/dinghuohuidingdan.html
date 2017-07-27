@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>myapp</title>
+	</head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telphone=no,email=no" />
+	<meta name="hotcss" content="max-width=640">
+	<title>手机端商城</title>
+
+	<link rel="stylesheet" type="text/css" href="../../satic/font_jrpqbc4ck81tt9/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/dropload.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/dingdan.css" />
+	<link rel="stylesheet" href="../../css/all.css" />
+	<!--适应手机的hotcss-->
+	<script src="../../js/hotcss.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<script src="../../js/config.js"></script>
+	<script src="../../js/tmpl/odering/dingdan.js"></script>
+	<script src="../../js/common.js"></script>
+	<body>
+		<div class="headers display-flex">
+			<div class="header_center  display-flex">
+				<div class="back iconfont">
+					&#xe604;
+				</div>
+				<div class="center">
+
+				</div>
+				<div class="delete">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="containers">
+			<div class="containers_header display-flex">
+				<!--商品详细信息的头部-->
+			</div>
+			<div class="size display-flex">
+			<form action="" id="form">
+				<div class="size_center display-flex" id="size_center">
+
+					<div class="center_list flex-start" id="sp_name_list">
+						<!--颜色尺码等数据加载的地方-->
+
+					</div>
+					
+				</div>
+			</form>
+			</div>
+			<!--颜色-->
+			<div class="color display-flex margin-top-20">
+			</div>
+			
+			<div class="nums display-flex margin-top-20">
+				<div class="num_center display-flex">
+					<div class="left">
+						数量(件)
+					</div>
+					<div class="right flex-end">
+						<button class="down">
+						-
+					    </button>
+						<input type="text" value="0" maxlength="5"/>
+						<button class="up">
+						+
+					    </button>
+					</div>
+				</div>
+			</div>
+			<div class="allnum display-flex margin-top-20">
+				<div class="allnum_center display-flex">
+					<div class="left">
+						总数量:<span id="all_numbers">0</span>
+					</div>
+					<div class="right">
+						总金额：<span id="all_money">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="submit display-flex margin-top-20">
+				<input type="submit" value="保存并提交" id="submit">
+			</div>
+		</div>
+		<div class="warning">
+			数量已经是0了
+		</div>
+        <div class="warning1">
+			请先选择颜色和尺码
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,134 @@
+{
+	"code": 200,
+	"datas": {
+		"goods_commonid": "103226",
+		"goods_name": "\u65e0\u8896\u77ed\u4e0a\u8863   AI244580",
+		"goods_serial": "AI244580",
+		"goods_marketprice": "1595.00",
+		"goods_price": "1435.50",
+		"spec_name": {
+			"1": "\u989c\u8272",
+			"16": "\u5c3a\u7801"
+		},
+		"spec_value": {
+			"1": {
+				"2289": {
+					"sp_v_id": 2289,
+					"sp_v_name": "\u9ed1\u8272",
+					"checked": ""
+				},
+				"2557": {
+					"sp_v_id": 2557,
+					"sp_v_name": "\u5927\u7ea2",
+					"checked": ""
+				}
+			},
+			"16": {
+				"2258": {
+					"sp_v_id": 2258,
+					"sp_v_name": "S",
+					"checked": ""
+				},
+				"2259": {
+					"sp_v_id": 2259,
+					"sp_v_name": "M",
+					"checked": ""
+				},
+				"2260": {
+					"sp_v_id": 2260,
+					"sp_v_name": "L",
+					"checked": ""
+				}
+			}
+		},
+		"store_id": "132",
+		"store_name": "FADCY  STYLE",
+		"gc_name": "\u670d\u9970\u978b\u5e3d &gt;\u5973\u88c5 &gt;\u4e0a\u8863",
+		"spec_list": {
+			"2258|2289": {
+				"goods_id": "126185",
+				"goods_price": "957.00",
+				"goods_spec": "\u7c7b\u578b:\u5973\u88c5 &gt;\u4e0a\u8863,\u989c\u8272:\u9ed1\u8272,\u5c3a\u7801:S"
+			},
+			"2259|2289": {
+				"goods_id": "126186",
+				"goods_price": "957.00",
+				"goods_spec": "\u7c7b\u578b:\u5973\u88c5 &gt;\u4e0a\u8863,\u989c\u8272:\u9ed1\u8272,\u5c3a\u7801:M"
+			},
+			"2260|2289": {
+				"goods_id": "126187",
+				"goods_price": "957.00",
+				"goods_spec": "\u7c7b\u578b:\u5973\u88c5 &gt;\u4e0a\u8863,\u989c\u8272:\u9ed1\u8272,\u5c3a\u7801:L"
+			},
+			"2258|2557": {
+				"goods_id": "126188",
+				"goods_price": "957.00",
+				"goods_spec": "\u7c7b\u578b:\u5973\u88c5 &gt;\u4e0a\u8863,\u989c\u8272:\u5927\u7ea2,\u5c3a\u7801:S"
+			},
+			"2259|2557": {
+				"goods_id": "126189",
+				"goods_price": "957.00",
+				"goods_spec": "\u7c7b\u578b:\u5973\u88c5 &gt;\u4e0a\u8863,\u989c\u8272:\u5927\u7ea2,\u5c3a\u7801:M"
+			},
+			"2260|2557": {
+				"goods_id": "126190",
+				"goods_price": "957.00",
+				"goods_spec": "\u7c7b\u578b:\u5973\u88c5 &gt;\u4e0a\u8863,\u989c\u8272:\u5927\u7ea2,\u5c3a\u7801:L"
+			}
+		},
+		"spec_image": {
+			"2289": "http:\/\/zlin.test.com\/data\/upload\/shop\/common\/default_goods_image_60.gif",
+			"2557": "http:\/\/zlin.test.com\/data\/upload\/shop\/common\/default_goods_image_60.gif"
+		},
+		"sp_name": "\u989c\u8272",
+		"colspec": {
+			"2289": {
+				"sp_name": [
+					"\u9ed1\u8272"
+				],
+				"list": [
+					{
+						"goods_id": "126185",
+						"skuid": "2258|2289",
+						"skuname": "S|\u9ed1\u8272"
+					}, {
+						"goods_id": "126186",
+						"skuid": "2259|2289",
+						"skuname": "M|\u9ed1\u8272"
+					}, {
+						"goods_id": "126187",
+						"skuid": "2260|2289",
+						"skuname": "L|\u9ed1\u8272"
+					}
+				]
+			},
+			"2557": {
+				"sp_name": [
+					"\u5927\u7ea2"
+				],
+				"list": [
+					{
+						"goods_id": "126188",
+						"skuid": "2258|2557",
+						"skuname": "S|\u5927\u7ea2"
+					}, {
+						"goods_id": "126189",
+						"skuid": "2259|2557",
+						"skuname": "M|\u5927\u7ea2"
+					}, {
+						"goods_id": "126190",
+						"skuid": "2260|2557",
+						"skuname": "L|\u5927\u7ea2"
+					}
+				]
+			}
+		},
+		"rowspec": {
+			"2258": "S",
+			"2259": "M",
+			"2260": "L"
+		},
+		"goods_image": "http:\/\/zlin.test.com\/data\/upload\/shop\/common\/default_goods_image.gif"
+	},
+	"errMsg": "\u6210\u529f\u83b7\u53d6\u5546\u54c1\u4fe1\u606f"
+}

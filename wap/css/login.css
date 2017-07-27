@@ -1,0 +1,141 @@
+body {
+  width: 16rem;
+  background: url(../image/login/bg-pic.png) no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+.containers {
+  height: 29.86667rem;
+  background-color: rgba(39, 38, 37, 0.56); }
+
+.login_container {
+  width: 16rem;
+  height: 8.53333rem; }
+  .login_container img {
+    width: 4.26667rem;
+    height: 4.26667rem; }
+
+.title {
+  width: 16rem; }
+  .title .list1 {
+    width: 16rem;
+    text-align: center;
+    color: #fefefe;
+    font-size: 0.81067rem; }
+  .title .list2 {
+    width: 16rem;
+    margin-top: 0.93867rem;
+    text-align: center;
+    color: #c9c5c2;
+    font-size: 0.64rem; }
+  .title .list3 {
+    margin-top: 0.512rem;
+    margin-bottom: 1.152rem;
+    width: 16rem;
+    color: #c9c5c2;
+    font-size: 0.64rem;
+    text-align: center; }
+
+.input {
+  width: 16rem; }
+  .input .input_container {
+    width: 9.344rem;
+    height: 7.68rem; }
+    .input .input_container .phone {
+      width: 9.344rem;
+      height: 1.92rem; }
+      .input .input_container .phone img {
+        width: 0.768rem;
+        height: 0.768rem; }
+      .input .input_container .phone input {
+        width: 8.192rem;
+        height: 1.92rem;
+        margin-left: 0.384rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.02133rem solid #d6d6d6;
+        outline: medium;
+        font-size: 0.59733rem;
+        text-align: left;
+        color: #c9c5c2; }
+      .input .input_container .phone input::-webkit-input-placeholder,
+      .input .input_container .phone textarea::-webkit-input-placeholder {
+        color: #c9c5c2; }
+      .input .input_container .phone input:-moz-placeholder,
+      .input .input_container .phone textarea:-moz-placeholder {
+        color: #c9c5c2; }
+      .input .input_container .phone input::-moz-placeholder,
+      .input .input_container .phone textarea::-moz-placeholder {
+        color: #c9c5c2; }
+      .input .input_container .phone input:-ms-input-placeholder,
+      .input .input_container .phone textarea:-ms-input-placeholder {
+        color: #c9c5c2; }
+      .input .input_container .phone #invitation {
+        background: url(../image/login/login-scan.png) no-repeat;
+        background-position: right center; }
+
+.posr {
+  position: relative; }
+
+.get_numbers {
+  position: relative; }
+
+.tab {
+  height: 1.92rem;
+  line-height: 1.92rem;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  color: #ce9100;
+  font-size: 0.59733rem; }
+
+.tab2 {
+  display: none; }
+
+.get_nus {
+  display: none; }
+
+.get_number {
+  height: 1.92rem;
+  line-height: 1.92rem;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  color: #ce9100;
+  font-size: 0.59733rem; }
+
+.sure {
+  width: 16rem;
+  margin-top: 1.70667rem; }
+  .sure button {
+    outline: none;
+    border-radius: 0.93867rem;
+    width: 13.65333rem;
+    height: 1.87733rem;
+    line-height: 1.87733rem;
+    font-size: 0.768rem;
+    color: #FFFFFF;
+    background-color: #ce9100; }
+
+.button_signp {
+  display: none; }
+
+#get_container {
+  display: none; }
+
+.signups {
+  display: none; }
+
+.forgot_signup {
+  margin-top: 0.93867rem;
+  width: 16rem;
+  color: #333333;
+  font-size: 0.64rem; }
+  .forgot_signup .forgot {
+    width: 50%;
+    text-align: center; }
+  .forgot_signup .signup {
+    text-align: center;
+    width: 50%; }
+
+/*# sourceMappingURL=login.css.map */

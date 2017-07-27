@@ -1,0 +1,136 @@
+body {
+  width: 16rem;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  overflow: scroll;
+  max-width: 16rem; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+a:active {
+  text-decoration: none;
+  color: #333; }
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #cd9300; }
+
+.headers {
+  position: fixed;
+  top: 0rem;
+  left: 0rem; }
+
+.header {
+  width: 16rem;
+  height: 2.75rem;
+  background-color: #cd9300;
+  position: relative;
+  border-bottom: 0.075rem solid #ab9555; }
+  .header .input {
+    position: absolute;
+    left: 0.5rem;
+    top: 1.25rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .input .header-list1 {
+      width: 10rem;
+      font-size: 0.7rem;
+      color: #FFFFFF; }
+    .header .input .header-list3 {
+      width: 5rem;
+      text-align: right;
+      font-size: 0.7rem;
+      color: #FFFFFF; }
+
+.containersss .container {
+  font-size: 0.7rem;
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #e6e6e6;
+  font-size: 0.7rem; }
+  .containersss .container .container-bar {
+    width: 15rem;
+    display: flex; }
+
+.modellist {
+  font-size: 0.7rem;
+  font-weight: 700;
+  height: 1.55rem;
+  line-height: 1.55rem; }
+
+.container-bar-list {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  height: 1.55rem;
+  line-height: 1.55rem; }
+
+.modellist-1 {
+  width: 6.75rem; }
+  .modellist-1 .text {
+    width: 4rem; }
+    .modellist-1 .text .gray {
+      width: 4rem; }
+
+.modellist_container {
+  width: 8.25rem;
+  font-size: 0.675rem; }
+
+.modellist-2 {
+  width: 2.5rem; }
+
+.modellist-3 {
+  width: 2.5rem; }
+
+.modellist-4 {
+  width: 3.25rem; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 15rem;
+  height: 2.7rem; }
+  .center img {
+    width: 2.5rem;
+    height: 2.5rem; }
+  .center .text {
+    width: 4rem;
+    height: 2rem;
+    overflow: hidden;
+    font-size: 0.6rem; }
+
+.container-bar {
+  width: 15rem;
+  display: flex; }
+
+.goods_shows {
+  margin-top: 4.5rem;
+  background-color: #FFFFFF; }
+
+.good-show {
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.border-rights {
+  border-right: 0.05rem solid #dfdfdf; }
+
+.border-bottoms {
+  border-bottom: 0.05rem solid #dfdfdf; }
+
+.list-height {
+  height: 2.7rem; }
+
+/*# sourceMappingURL=Orderhasbeensubmitted.css.map */

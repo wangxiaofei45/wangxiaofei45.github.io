@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>登录</title>
+	</head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telphone=no,email=no" />
+	<meta name="hotcss" content="max-width=640">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/login.css" />
+
+	<script src="../../js/angular/jquery-3.1.1.min.js"></script>
+	<script src="../../js/hotcss.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/tmpl/odering/login.js"></script>
+	<script type="text/javascript" src="../../js/config.js"></script>
+
+	<body>
+		<div class="containers">
+
+			<div class="login_container display-flex">
+				<img src="../../image/login/logo.png" />
+			</div>
+			<div class="title">
+				<div class="list1">欢迎加入原创设计联盟</div>
+				<div class="list2">设计改变生活</div>
+				<div class="list3">Design Changes Your Life</div>
+			</div>
+			<div class="input display-flex">
+				<div class="input_container">
+
+					<div class="phone display-flex posr">
+						<img src="../../image/login/login-number.png" alt="" />
+						<input type="number" placeholder="手机号" id="phone"/>
+						<div class="tab tab1" id="captcha_login">
+							验证码登录
+						</div>
+						<div class="tab tab2" id="pas_login">
+							密码登录
+						</div>
+					</div>
+					<div class="get_nu">
+						<div class="phone display-flex">
+							<img src="../../image/login/login-password.png" alt="" />
+							<input type="text" placeholder="密码" id="password"/>
+						</div>
+					</div>
+					<div class="get_nus">
+						<div class="phone display-flex get_numbers">
+							<img src="../../image/login/login-test.png" alt="" />
+							<input type="number" placeholder="验证码"  id="login"/>
+							<div class="get_number" type="login">
+								获取验证码1
+							</div>
+						</div>
+					</div>
+					<div id="get_container">
+						<div class="phone display-flex get_numbers">
+							<img src="../../image/login/login-test.png" alt="" />
+							<input type="number" placeholder="验证码" id="register"/>
+							<div class="get_number" type="register">
+								获取验证码2
+							</div>
+						</div>
+						<div class="phone display-flex get_numbers">
+							<img src="../../image/login/login-invitation.png" alt="" />
+							<input type="text" placeholder="邀请码" / id="invitation">
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="sure display-flex">
+				<button class="button_login">
+				登录
+			  </button>
+				<button class="button_signp">
+				注册
+			  </button>
+			</div>
+			<div class="forgot_signup display-flex">
+				<div class="forgot">
+					忘记密码？
+				</div>
+				<div class="signup">
+					立即注册>>
+				</div>
+				<div class="signups">
+					快速登录>>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="ydApp" ng-controller="ydCtrl">
+
+	<head>
+		<title>myapp</title>
+	</head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telphone=no,email=no" />
+	<meta name="hotcss" content="max-width=640">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/inner.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/index02.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../../satic/font_hbtm39qp07xh6w29/iconfont.css" />
+	<!--适应手机的hotcss-->
+	<script src="../../js/angular/jquery-3.1.1.min.js"></script>
+	<script src="../../js/hotcss.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/config.js"></script>
+	<script src="../../js/tmpl/odering/index.js"></script>
+	<script src="../../js/tmpl/odering/function.js"></script>
+	<!--刷新列表-->
+	<body>
+		<div ng-view>
+
+		</div>
+		<!--页面的底部公用的部分-->
+		<div class="footer display-flex">
+			<div class="col-3 text-center" id="goods">
+				<a class="footer_active" href="#/dinghuohui02_3">
+					<span class="iconfont">&#xe60b;</span>
+					<div>
+						商品
+					</div>
+				</a>
+			</div>
+			<div class="col-3 text-center" id="order">
+				<a href="#/dingdan">
+					<span class="iconfont">&#xe613;</span>
+					<div>
+						订单
+					</div>
+				</a>
+			</div>
+			<div class="col-3 text-center" id="display">
+				<a href="#/analys">
+					<span class="iconfont">&#xe608;</span>
+					<div>
+						分析
+					</div>
+				</a>
+			</div>
+			<div class="col-3 text-center" id="myself">
+				<a href="#/my">
+					<span class="iconfont">&#xe60f;</span>
+					<div>
+						我的
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="../../js/angular/angular.min.js"></script>
+		<script src="../../js/angular/angular-route.js"></script>
+		<script src="../../js/angular/angular-animate.min.js"></script>
+		<script src="../../js/angular/bootstrap.js"></script>
+		<script>
+						$(document).on("pageinit", "#pageone", function() {
+							$(".model-3").on("swiperight", function() {
+								$('.model-3').animate({
+									left: "100%"
+								});
+							});
+						});
+			angular.module("ydApp", ["ngRoute"])
+				.controller("ydCtrl", ["$scope", function($scope) {}])
+				//配置路由
+				.config(function($routeProvider) {
+					$routeProvider
+						.when("/home", {
+							templateUrl: "dinghuohui02_3.html"
+						})
+						.when("/dingdan", {
+							templateUrl: "dingdan.html"
+						})
+						.when("/analys", {
+							templateUrl: "analys.html"
+						})
+						.when("/my", {
+							templateUrl: "my.html"
+						})
+						.otherwise({
+							redirectTo: "/home"
+						})
+				})
+		</script>
+	</body>
+
+</html>

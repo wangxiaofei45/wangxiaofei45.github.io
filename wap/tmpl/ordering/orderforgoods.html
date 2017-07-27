@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>analys</title>
+	</head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telphone=no,email=no" />
+	<meta name="hotcss" content="max-width=640">
+	<title>手机端商城</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="../../satic/font_jrpqbc4ck81tt9/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/orderforgoods.css" />
+	<!--适应手机的hotcss-->
+	<script src="../../js/hotcss.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/config.js"></script>
+    <script src="../../js/tmpl/odering/orderforgoods.js"></script>
+    <script src="../../js/tmpl/odering/index.js"></script>
+
+	<body>
+		<!--头部的固定的-->
+		<div class="headers">
+			<div class="header">
+				<div class="input">
+					<div id="goback" class="header-list1 iconfont">
+						&#xe604;
+					</div>
+					<div class="header-list2">
+						订单
+					</div>
+					<div class="header-list1">
+						订单管理
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<div class="bar display-flex">
+				<div class="bar_center display-flex">
+					<div class="ready active text-center" id="already_order">
+						已完成订单
+					</div>
+					<div class="ready text-center" id="unfinished_order">
+						未完成订单
+					</div>
+				</div>
+			</div>
+			<div id="ready">
+				<div class="order_list display-flex" id="order_completed">
+				</div>
+				<div class="footer display-flex" id="bottom">
+				</div>
+			</div>
+			<!--notready-->
+			<div id="not_ready">
+				
+			</div>
+			<div class="submit">
+			<div class="display-flex">
+				<button id="submit">
+					提交
+				</button>
+			</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+body {
+    width: px2rem(750);
+    background-color: #f5f5f5;
+    overflow: hidden;
+    img{
+        position: fixed;
+        left: px2rem(0);
+        top: px2rem(0);
+        width: px2rem(750);
+        height: px2rem(1101);
+    }
+}
+
+.hezi{
+    z-index: 100;
+    background-color: #dcdcdc;
+    margin-top: px2rem(460);
+    width: px2rem(750);
+    height: px2rem(900);
+    position: relative;
+
+    .box_containerss{
+        position: absolute;
+        left: 50%;
+        margin-left: px2rem(-325);
+        margin-top: px2rem(50);
+        background-color: #FFFFFF;
+        width: px2rem(650);
+        height: px2rem(630);
+        img{
+            width: px2rem(190);
+            height: px2rem(190);
+            position: absolute;
+            left: 50%;
+            margin-left: px2rem(-95);
+            margin-top: px2rem(-95);
+        }
+        .list1{
+            width: px2rem(550);
+            height:px2rem(260);
+            margin-left: px2rem(50);
+            border-bottom: px2rem(1) dashed #a6a6a6;
+            .list1_container{
+                padding-top: px2rem(105);
+            }
+            .changecolor{
+                color: #d08f00;
+            }
+            div{
+                font-size: px2rem(30);
+                
+            }
+        }
+        .list2{
+            width: px2rem(550);
+            height:px2rem(140);
+            margin-left: px2rem(50);
+             border-bottom: px2rem(1) solid #a6a6a6;
+             .list2_container{
+                padding-top: px2rem(20);
+            }
+            .changecolor{
+                color: #d08f00;
+            }
+            div{
+                font-size: px2rem(30);
+                height: px2rem(50);
+                line-height: px2rem(50);
+            }
+        }
+        .list3{
+            width: px2rem(550);
+            height:px2rem(230);
+             margin-left: px2rem(50);
+             .list3_container{
+                padding-top: px2rem(20);
+            }
+            .changecolor{
+                color: #d08f00;
+            }
+            div{
+                font-size: px2rem(30);
+                height: px2rem(50);
+                line-height: px2rem(50);
+            }
+        }
+        .ciecle{
+            width: px2rem(36);
+                height:px2rem(36);
+                border-radius: 50%;
+                background-color: #dcdcdc;
+        }
+        .circle1{
+            position: absolute;
+            left: px2rem(-18);
+            top: px2rem(242);
+        }
+        .circle2{
+            position: absolute;
+            left: px2rem(630);
+            top: px2rem(242);
+        }
+        .circle3{
+            position: absolute;
+            left: px2rem(-18);
+            top: px2rem(382);
+        }
+        .circle4{
+            position: absolute;
+            left: px2rem(630);
+            top: px2rem(382);
+        }
+        
+    }
+    button{
+        position: absolute;
+        top:px2rem(730);
+        left: 50%;
+        margin-left: px2rem(-300);
+        width: px2rem(600);
+        height:px2rem(80);
+        color: #FFFFFF;
+        background-color: #cd9300;
+        border-radius: px2rem(20);
+        outline: none;
+    }
+}

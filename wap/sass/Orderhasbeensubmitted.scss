@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 640;
+body {
+    width: 16rem;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+    overflow: scroll;
+    max-width: px2rem(640);
+}
+a {
+        text-decoration: none;
+        color: #333;   
+    }
+     a:active {
+         text-decoration: none;
+          color: #333;
+     }
+     a:focus, a:hover{
+         text-decoration: none;
+         color: #cd9300;
+     }
+.headers {
+    position: fixed;
+    top: px2rem(0);
+    left: px2rem(0);
+}
+
+.header {
+    width: px2rem(640);
+    height: px2rem(110);
+    background-color: #cd9300;
+    position: relative;
+    border-bottom: px2rem(3) solid #ab9555;
+    .input {
+        position: absolute;
+        left: px2rem(20);
+        top: px2rem(50);
+        width: px2rem(600);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .header-list1 {
+            width: px2rem(400);
+            font-size: px2rem(28);
+            color: #FFFFFF;
+        }
+        .header-list3 {
+            width: px2rem(200);
+            text-align: right;
+            font-size: px2rem(28);
+            color: #FFFFFF;
+        }
+    }
+}
+
+.containersss {
+    .container {
+        font-size: px2rem(28);
+        width: 16rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #e6e6e6;
+        font-size: px2rem(28);
+        .container-bar {
+            width: 15rem;
+            display: flex;
+        }
+    }
+}
+
+.modellist {
+    font-size: px2rem(28);
+    font-weight: 700;
+    height: px2rem(62);
+    line-height: px2rem(62);
+}
+
+.container-bar-list {
+    font-size: px2rem(28);
+    font-weight: 700;
+    text-align: center;
+    height: px2rem(62);
+    line-height: px2rem(62);
+}
+
+.modellist-1 {
+    width: px2rem(270);
+    .text {
+        width: px2rem(160);
+        .gray{
+            width: px2rem(160);
+            
+        }
+    }
+}
+
+.modellist_container {
+    width: px2rem(330);
+    font-size: px2rem(27);
+}
+
+.modellist-2 {
+    width: px2rem(100);
+}
+
+.modellist-3 {
+    width: px2rem(100);
+}
+
+.modellist-4 {
+    width: px2rem(130);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: px2rem(600);
+    height: px2rem(108);
+    img {
+        width: px2rem(100);
+        height: px2rem(100);
+    }
+    .text {
+        width: px2rem(160);
+        height: px2rem(80);
+        overflow: hidden;
+        font-size: px2rem(24);
+        
+    }
+}
+
+.container-bar {
+    width: 15rem;
+    display: flex;
+}
+.goods_shows{
+    margin-top: px2rem(180);
+    background-color: #FFFFFF;
+}
+.good-show {
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.border-rights{
+        border-right: px2rem(2) solid #dfdfdf;
+    }
+   .border-bottoms{
+       border-bottom: px2rem(2) solid #dfdfdf;
+   }
+   .list-height {
+    height: px2rem(108);
+}

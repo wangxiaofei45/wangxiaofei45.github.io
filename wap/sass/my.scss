@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+body {
+    width: px2rem(750);
+    background-color: #f5f5f5;
+}
+
+.my_body {
+    .header {
+        width: px2rem(750);
+        height: px2rem(88);
+        background-color: #ce9100;
+        border-bottom: px2rem(1) solid #959595;
+        .header_container {
+            width: px2rem(700);
+            height: px2rem(88);
+            font-size: px2rem(34);
+            color: #FFFFFF;
+            .header_list1 {
+                width: px2rem(100);
+                text-align: center;
+            }
+            .header_list2 {
+                width: px2rem(500);
+                text-align: center;
+            }
+        }
+    }
+    .user_manager {
+        width: px2rem(750);
+        height: px2rem(170);
+        background-color: #ce9100;
+        .user_container {
+            width: px2rem(626);
+            img {
+                width: px2rem(116);
+                height: px2rem(116);
+            }
+            .user_name {
+                width: px2rem(230);
+                .name1,
+                .name2 {
+                    width: px2rem(230);
+                }
+                .name1 {
+                    font-size: px2rem(25);
+                    color: #dfcea5;
+                    text-align: center;
+                }
+                .name2 {
+                    font-size: px2rem(30);
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+            .area {
+                width: px2rem(280);
+                .area1,
+                .area2 {
+                    width: px2rem(280);
+                }
+                .area1 {
+                    font-size: px2rem(25);
+                    color: #dfcea5;
+                    text-align: center;
+                }
+                .area2 {
+                    font-size: px2rem(30);
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .Super_services {
+        background-color: #FFFFFF;
+        .Super_service {
+            width: px2rem(750);
+            height: px2rem(80);
+            margin-top: px2rem(12);
+            .Super_center {
+                width: px2rem(710);
+                height: px2rem(80);
+                border-bottom: px2rem(1) solid #d6d6d6;
+                img {
+                    width: px2rem(32);
+                    height: px2rem(32);
+                }
+                .text {
+                    margin-left: px2rem(15);
+                    font-size: px2rem(29);
+                    color: #666666;
+                }
+            }
+        }
+        .user_tab {
+             width: px2rem(750);
+            height: px2rem(114);
+            .tab_center{
+                 width: px2rem(708);
+                 height: px2rem(114);
+                 .center_list{
+                     img{
+                         width: px2rem(32);
+                         height: px2rem(32);
+                     }
+                     p{
+                         font-size: px2rem(23);
+                         color: #999999;
+                     }
+                     text-align: center;
+                     width: px2rem(236);
+                     height: px2rem(114);
+                 }
+            }
+        }
+    }
+    .function{
+        width: px2rem(750);
+        height: px2rem(90);
+        background-color: #FFFFFF;
+        margin-top: px2rem(14);
+        .function_center{
+             width: px2rem(710);
+             height: px2rem(90);
+            img{
+                width: px2rem(36);
+                height: px2rem(36);
+            }
+            .text{
+                width: px2rem(394);
+                color: #666666;
+                text-align: left;
+                font-size: px2rem(30);
+                margin-left: px2rem(10);
+            }
+            .text2{
+                width: px2rem(270);
+                text-align: right;
+                 font-size: px2rem(30);
+                 
+            }
+            .color{
+                color: #CE9100;
+            }
+        }
+    }
+}

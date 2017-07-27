@@ -1,0 +1,121 @@
+body {
+  width: 16rem;
+  background-color: #f5f5f5; }
+
+.my_team .header_fixt {
+  position: fixed;
+  left: 0rem;
+  top: 0rem; }
+  .my_team .header_fixt .header {
+    width: 16rem;
+    height: 1.87733rem;
+    background-color: #ce9100;
+    border-bottom: 0.02133rem solid #959595; }
+    .my_team .header_fixt .header .header_container {
+      width: 14.93333rem;
+      height: 1.87733rem;
+      font-size: 0.72533rem;
+      color: #FFFFFF; }
+      .my_team .header_fixt .header .header_container .header_list1 {
+        width: 2.13333rem;
+        text-align: center; }
+      .my_team .header_fixt .header .header_container .header_list2 {
+        width: 10.66667rem;
+        text-align: center; }
+  .my_team .header_fixt .user_manager {
+    width: 16rem;
+    height: 3.62667rem;
+    background-color: #ce9100; }
+    .my_team .header_fixt .user_manager .user_container {
+      width: 13.35467rem; }
+      .my_team .header_fixt .user_manager .user_container img {
+        width: 2.47467rem;
+        height: 2.47467rem; }
+      .my_team .header_fixt .user_manager .user_container .user_name {
+        width: 4.90667rem; }
+        .my_team .header_fixt .user_manager .user_container .user_name .name1,
+        .my_team .header_fixt .user_manager .user_container .user_name .name2 {
+          width: 4.90667rem; }
+        .my_team .header_fixt .user_manager .user_container .user_name .name1 {
+          font-size: 0.53333rem;
+          color: #dfcea5;
+          text-align: center; }
+        .my_team .header_fixt .user_manager .user_container .user_name .name2 {
+          font-size: 0.64rem;
+          color: #FFFFFF;
+          text-align: center; }
+      .my_team .header_fixt .user_manager .user_container .area {
+        width: 5.97333rem; }
+        .my_team .header_fixt .user_manager .user_container .area .area1,
+        .my_team .header_fixt .user_manager .user_container .area .area2 {
+          width: 5.97333rem; }
+        .my_team .header_fixt .user_manager .user_container .area .area1 {
+          font-size: 0.53333rem;
+          color: #dfcea5;
+          text-align: center; }
+        .my_team .header_fixt .user_manager .user_container .area .area2 {
+          font-size: 0.64rem;
+          color: #FFFFFF;
+          text-align: center; }
+.my_team .team {
+  width: 16rem;
+  height: 1.45067rem;
+  background-color: #FFFFFF;
+  font-size: 0.59733rem;
+  color: #333333; }
+  .my_team .team .team_lest {
+    text-align: center;
+    width: 3.84rem; }
+
+.team_container {
+  display: none;
+  margin-top: 6.95467rem;
+  width: 16rem; }
+  .team_container .empty {
+    display: flex;
+    justify-content: center;
+    width: 16rem; }
+    .team_container .empty img {
+      width: 8.53333rem;
+      height: 4.26667rem;
+      margin-top: 4.52267rem; }
+  .team_container .empty_measege {
+    width: 16rem;
+    margin-top: 0.85333rem;
+    font-size: 0.64rem;
+    color: #cfcfcf;
+    text-align: center; }
+
+#my_team {
+  margin-top: 6.95467rem;
+  margin-bottom: 0.64rem; }
+  #my_team .invitation_container {
+    width: 16rem;
+    color: #666666; }
+    #my_team .invitation_container .team_lest {
+      height: 1.45067rem;
+      line-height: 1.45067rem;
+      font-size: 0.59733rem;
+      color: #333333;
+      text-align: center;
+      width: 3.84rem; }
+
+#my_team .invitation_container:nth-child(2n) {
+  background-color: #FFFFFF; }
+
+#my_team .invitation_container:nth-child(2n+1) {
+  background-color: #F5F5F5; }
+
+.myteamfooter {
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  width: 16rem;
+  line-height: 0.64rem;
+  height: 0.64rem;
+  text-align: center;
+  background-color: #9fa0a0;
+  font-size: 0.42667rem;
+  color: #FF0000; }
+
+/*# sourceMappingURL=myteam.css.map */
