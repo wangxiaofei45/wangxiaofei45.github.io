@@ -1,0 +1,51 @@
+.tab_bar {
+  z-index: 1;
+  width: 100%;
+  height: 1.92rem;
+  background-color: #FFFFFF;
+  position: fixed;
+  left: 0rem;
+  top: 0rem; }
+  .tab_bar .logo {
+    width: 5.97333rem;
+    height: 1.28rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.98667rem;
+    margin-top: -0.64rem; }
+  .tab_bar .meau {
+    width: 1.92rem;
+    height: 1.92rem;
+    position: relative; }
+    .tab_bar .meau img {
+      margin-top: 0.42667rem;
+      margin-left: 0.64rem;
+      width: 1.06667rem;
+      height: 1.06667rem; }
+    .tab_bar .meau .section-btn {
+      z-index: 1;
+      width: 16rem;
+      display: none;
+      position: absolute;
+      left: 0rem;
+      top: 100%; }
+      .tab_bar .meau .section-btn li {
+        width: 100%;
+        height: 1.70667rem;
+        line-height: 1.70667rem;
+        border-bottom: 0.064rem solid #d6d6d6;
+        background: #FFFFFF;
+        text-align: center;
+        color: #666666; }
+      .tab_bar .meau .section-btn li.on {
+        color: #23b9cb; }
+
+.section-1 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 0rem; }
+
+/*# sourceMappingURL=index.css.map */

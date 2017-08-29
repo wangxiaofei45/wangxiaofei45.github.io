@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+.tab_bar {
+    z-index: 1;
+    width: 100%;
+    height: px2rem(90);
+    background-color: #FFFFFF;
+    position: fixed;
+    left: px2rem(0);
+    top: px2rem(0);
+    .logo {
+        width: px2rem(280);
+        height: px2rem(60);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: px2rem(-140);
+        margin-top: px2rem(-30);
+    }
+    .meau {
+        width: px2rem(90);
+        height: px2rem(90);
+        position: relative;
+        img {
+            margin-top: px2rem(20);
+            margin-left: px2rem(30);
+            width: px2rem(50);
+            height: px2rem(50);
+        }
+        .section-btn {
+            z-index: 1;
+            width: px2rem(750);
+            display: none;
+            position: absolute;
+            left: px2rem(0);
+            top: 100%;
+            li {
+                width: 100%;
+                height: px2rem(80);
+                line-height: px2rem(80);
+//              cursor: pointer;
+                border-bottom: px2rem(3) solid #d6d6d6;
+                background: #FFFFFF;
+                text-align: center;
+                color: #666666;
+//              onsor: pointer;
+            }
+            li.on {
+                color: #23b9cb;
+            }
+        }
+    }
+}
+
+.section-1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: px2rem(0);
+    top: px2rem(0);
+}
