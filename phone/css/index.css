@@ -1,7 +1,15 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0px; }
+
 .tab_bar {
   z-index: 1;
   width: 100%;
   height: 1.92rem;
+  border-bottom: 0.064rem solid #d6d6d6;
   background-color: #FFFFFF;
   position: fixed;
   left: 0rem;
@@ -41,11 +49,215 @@
       .tab_bar .meau .section-btn li.on {
         color: #23b9cb; }
 
+.section-wrap .section .title {
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  color: #fff;
+  font-size: 2.4em;
+  text-align: center; }
+
+.section-wrap .section .title p {
+  width: 3.456rem;
+  height: 1.32267rem;
+  line-height: 1.32267rem;
+  border: 0.08533rem solid #666666;
+  border-radius: 0.21333rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.728rem;
+  font-size: 0.61867rem;
+  color: #000000; }
+
+.section-wrap .section .title.active .tit {
+  opacity: 1;
+  transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  transition: all 2s cubic-bezier(0.86, 0, 0.8, 1);
+  -webkit-transition: all 2s cubic-bezier(0.86, 0, 0.8, 1); }
+
 .section-1 img {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0rem;
   top: 0rem; }
+
+.section-2 {
+  background-color: #F5F5F5; }
+  .section-2 .page_text_con {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: #333333;
+    font-size: 0.64rem; }
+    .section-2 .page_text_con .page2_text {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.85333rem; }
+  .section-2 .bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 4.26667rem;
+    font-size: 0.46933rem;
+    color: #666666; }
+    .section-2 .bottom .two {
+      width: 7.25333rem;
+      margin: 0 auto;
+      margin-bottom: 2.02667rem; }
+      .section-2 .bottom .two .bottom_con {
+        width: 2.56rem;
+        float: left;
+        text-align: center; }
+        .section-2 .bottom .two .bottom_con img {
+          width: 1.70667rem;
+          height: 1.70667rem; }
+    .section-2 .bottom .three {
+      width: 12.37333rem;
+      margin: 0 auto; }
+      .section-2 .bottom .three .bottom_con {
+        width: 2.56rem;
+        float: left;
+        text-align: center; }
+        .section-2 .bottom .three .bottom_con img {
+          width: 1.70667rem;
+          height: 1.70667rem; }
+    .section-2 .bottom .margin-right-100 {
+      margin-right: 2.13333rem; }
+
+.section-3 .page3_banner {
+  width: 100%;
+  height: 7.46667rem;
+  background: url(../image/about/aboutbg-pic.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  margin-top: 4.90667rem; }
+  .section-3 .page3_banner .timeline {
+    position: relative;
+    background: url(../image/about/p3-timeline-line.png) no-repeat center 1.06667rem;
+    text-align: center;
+    margin-top: 2.13333rem; }
+  .section-3 .page3_banner .timeline li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    width: 5.12rem;
+    margin: 0 -0.68267rem;
+    color: #444;
+    background: url(../image/about/p3-timeline-point.png) no-repeat center 0.91733rem;
+    transition: color .3s linear;
+    cursor: pointer; }
+  .section-3 .page3_banner .timeline li p {
+    font-size: 0.42667rem;
+    margin-bottom: 0.21333rem; }
+  .section-3 .page3_banner .timeline li.current {
+    color: #fff; }
+  .section-3 .page3_banner .timeline li .time {
+    height: 0.42667rem; }
+  .section-3 .page3_banner .timeline li .circle {
+    display: block;
+    height: 0.704rem;
+    width: 0.704rem;
+    margin: 0.704rem auto;
+    background: url(../image/about/zhengfanxin.png) no-repeat center center;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s linear; }
+  .section-3 .page3_banner .timeline li .version {
+    height: 0.42667rem;
+    font-size: 0.384rem; }
+  .section-3 .page3_banner .timeline li .time,
+  .section-3 .page3_banner .timeline li .description {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    transition: opacity .2s linear;
+    *visibility: hidden; }
+  .section-3 .page3_banner .timeline li.current .time,
+  .section-3 .page3_banner .timeline li.current .description {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    *visibility: visible; }
+  .section-3 .page3_banner .timeline li.current .circle {
+    background-size: 100% 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    animation: circleZoom .3s linear forwards; }
+.section-3 .page3_text {
+  position: absolute;
+  top: 12.8rem;
+  padding: 0.42667rem 0.85333rem; }
+
+.section-4 .people {
+  position: absolute;
+  margin-top: 4.90667rem;
+  width: 100%; }
+  .section-4 .people .people1 {
+    width: 15.14667rem;
+    height: 5.16267rem;
+    margin: 0 auto;
+    margin-left: 0.42667rem;
+    margin-bottom: 0.42667rem;
+    background-color: #FFFFFF; }
+    .section-4 .people .people1 img {
+      float: left;
+      width: 2.77333rem;
+      height: 2.77333rem;
+      margin-left: 1.19467rem;
+      margin-top: 1.19467rem; }
+    .section-4 .people .people1 .text {
+      float: left;
+      width: 10.112rem;
+      height: 4.096rem;
+      margin: 0.64rem 0.53333rem 0.53333rem 0.53333rem; }
+      .section-4 .people .people1 .text .name {
+        color: #333333;
+        font-size: 0.576rem; }
+      .section-4 .people .people1 .text .text1 {
+        color: #23B9CB;
+        font-size: 0.42667rem; }
+      .section-4 .people .people1 .text .text2 {
+        color: #808080;
+        font-size: 0.42667rem; }
+
+.section-5 .sever_pos {
+  position: absolute;
+  margin-top: 8.96rem;
+  width: 100%; }
+  .section-5 .sever_pos .sever_con {
+    width: 13.22667rem;
+    margin: 0 auto; }
+    .section-5 .sever_pos .sever_con .con_text {
+      text-align: center;
+      width: 5.54667rem;
+      height: 7.46667rem;
+      margin-bottom: 2.34667rem;
+      float: left; }
+      .section-5 .sever_pos .sever_con .con_text .name {
+        height: 0.85333rem;
+        line-height: 0.85333rem;
+        font-size: 0.61867rem;
+        color: #23B9CB; }
+      .section-5 .sever_pos .sever_con .con_text .text {
+        box-sizing: border-box;
+        width: 5.54667rem;
+        height: 6.61333rem;
+        border: 0.064rem solid #b3b3b3;
+        border-radius: 0.42667rem;
+        box-shadow: 0 0 10px #b3b3b3; }
+        .section-5 .sever_pos .sever_con .con_text .text img {
+          width: 5.16267rem;
+          height: 2.85867rem;
+          margin: 0.128rem; }
+        .section-5 .sever_pos .sever_con .con_text .text p {
+          font-size: 0.42667rem;
+          color: #333333;
+          padding-left: 0.21333rem;
+          padding-right: 0.21333rem;
+          text-align: left; }
+    .section-5 .sever_pos .sever_con .con_text:nth-child(2n-1) {
+      margin-right: 2.13333rem; }
 
 /*# sourceMappingURL=index.css.map */

@@ -35,7 +35,7 @@ $(function(){
 
 		
 
-		/*右侧按钮点击*/
+		/*导航按钮点击*/
 
 		$btn.each(function(index) {
 
@@ -83,29 +83,29 @@ $(function(){
 
 		/*响应键盘上下键*/
 
-		$(document).one('keydown',k);
-
-		function k(event){
-
-			var e=event||window.event;
-
-			var key=e.keyCode||e.which||e.charCode;
-
-			switch(key)	{
-
-				case 38: down();run();	
-
-				break;
-
-				case 40: up();run();	
-
-				break;
-
-			};
-
-			setTimeout(function(){$(document).one('keydown',k)},1000);
-
-		}
+//		$(document).one('keydown',k);
+//
+//		function k(event){
+//
+//			var e=event||window.event;
+//
+//			var key=e.keyCode||e.which||e.charCode;
+//
+//			switch(key)	{
+//
+//				case 38: down();run();	
+//
+//				break;
+//
+//				case 40: up();run();	
+//
+//				break;
+//
+//			};
+//
+//			setTimeout(function(){$(document).one('keydown',k)},1000);
+//
+//		}
 
 	});
 

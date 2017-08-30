@@ -19,5 +19,29 @@ $(function() {
 	$(".meau img").click(function(){
       $('.section-btn').fadeToggle("slow");
 	})
-	
+	//了解DCLbanner
+	    var indexs = 0;
+		var twotimer = null;
+		function dolunbo2() {
+			timer = setInterval(function() {
+				indexs++;
+				if(indexs == 3) {
+					indexs = 0;
+				}
+				shows();
+			}, 2000);
+		};
+		dolunbo2();
+		function shows() {
+			$('.timeline ul li').eq(indexs).addClass('current').siblings().removeClass('current');
+		}
+		$('.timeline ul li').mouseover(function() {
+			indexs = $(this).indexs();
+			shows();
+			clearInterval(twotimer);
+		})
+		$('.timeline ul li').mouseout(function() {
+			indexs = $(this).indexs();
+			dolunbo2();
+		})
 })
