@@ -64,7 +64,7 @@ $designWidth: 750;
 .section-wrap .section .title {
     width: 100%;
     position: absolute;
-    top: 10%;
+    top: px2rem(150);
     color: #fff;
     font-size: 2.4em;
     text-align: center;
@@ -324,5 +324,341 @@ $designWidth: 750;
                 margin-right: px2rem(100);
             }
         }        
+    }
+}
+//服务内容
+.section-6{
+    .page6_pos{
+        position: absolute;
+        margin-top: px2rem(250);
+        width: 100%;
+        color: #333333;
+        .list{
+            width: 100%;
+            height: px2rem(182);
+            background-color: #FFFFFF;
+            margin-bottom: px2rem(20);
+            img{
+                width: px2rem(60);
+                height: px2rem(182);
+                float: left;
+                margin-left: px2rem(60);
+                margin-right: px2rem(60);
+            }
+            .text{
+                float: left;
+                width: px2rem(570);
+                height: px2rem(182);
+                h1{
+                    padding-top: px2rem(30);
+                }
+                .text_p{
+                    width: px2rem(570);
+                    margin-top: px2rem(30);
+                    font-size: px2rem(22);
+                    padding-right: px2rem(20);
+                }
+            }
+        }
+        .list4{
+            height: px2rem(210);
+            img{
+                width: px2rem(60);
+                height: px2rem(210);
+            }
+        }
+    }
+}
+.section-7{
+    .page7_pos{
+        position: absolute;
+        margin-top: px2rem(250);
+        width: 100%;
+        color: #333333;
+        .list{
+            width: 100%;
+            height: px2rem(100);
+            background-color: #FFFFFF;
+            margin-bottom: px2rem(88);
+            img{
+                width: px2rem(100);
+                height: px2rem(100);
+                float: left;
+                margin-left: px2rem(40);
+                margin-right: px2rem(40);
+            }
+            .text{
+                float: left;
+                width: px2rem(570);
+                height: px2rem(100);
+                h1{
+                    padding-top: px2rem(15);
+                }
+                .text_p{
+                    color: #666666;
+                    width: px2rem(570);
+                    font-size: px2rem(22);
+                    padding-right: px2rem(20);
+                }
+            }
+        }
+    }
+}
+//常见问题
+.section-8{
+    .qs_pos{
+        position: absolute;
+        margin-top: px2rem(280);
+        width: 100%;
+        .qs_con{
+            margin: 0 auto;
+            margin-bottom: px2rem(32);
+            width: px2rem(700);
+            height: px2rem(154);
+            padding-left: px2rem(24);
+            border-left: px2rem(6) solid #e0e0e0;
+            box-sizing: border-box;
+            .q{
+                font-size: px2rem(28);
+                color: #d23023;
+            }
+            .a{
+                font-size: px2rem(22);
+                color: #808080;
+            }
+        }
+    }
+}
+.section-9{
+    .pos{
+         position: absolute;
+        margin-top: px2rem(250);
+        width: 100%;
+        img{
+            width: 100%;
+            height: px2rem(302);
+        }
+        .con{
+            margin: 0 auto;
+            width: px2rem(712);
+            margin-top: px2rem(47);
+            .con_text{
+                float: left;
+                width: px2rem(145);
+                margin-right: px2rem(44);
+                margin-bottom: px2rem(50);
+                img{
+                    width: px2rem(145);
+                    height: px2rem(73);
+                }
+                .text{
+                    width: px2rem(145);
+                    font-size: px2rem(19);
+                    color: #666666;
+                    text-align: center;
+                }
+            }
+            .con_text:nth-child(4n){
+                margin-right: px2rem(0);
+            }
+        }
+    }
+}
+//产品
+.section-10{
+    overflow: scroll;
+    .pos{
+         position: absolute;
+        margin-top: px2rem(90);
+        width: 100%;
+        .con{
+            width: 100%;
+            img{
+                width: 100%;
+                height: px2rem(385);
+            }
+            .download{
+                width: 100%;
+                background-color: #FFFFFF;
+                margin-top: px2rem(42);
+                margin-bottom: px2rem(74);
+                .list{
+                    float: left;
+                    width: px2rem(140);
+                    img{
+                        width: px2rem(140);
+                        height: px2rem(140);
+                    }
+                    .text{
+                        width: px2rem(140);
+                        text-align: center;
+                        font-size: px2rem(24);
+                        color: #333333;
+                        
+                    }
+                    button{
+                        width: px2rem(120);
+                        margin-left: px2rem(10);
+                        height: px2rem(44);
+                        color: #FFFFFF;
+                        background-color: #2ebdce;
+                    }
+                }
+                .list:nth-child(1){
+                    margin-left: px2rem(150);
+                    margin-right: px2rem(180);
+                }
+            }
+            .product_shows{
+                width: px2rem(710);
+                margin: 0 auto;
+                margin-bottom: px2rem(50);
+                .product_header{
+                   border-left: px2rem(5) solid #23B9CB;
+                   padding-left: px2rem(20);
+                   height: px2rem(30);
+                   line-height: px2rem(30);
+                   color: #333333;
+                   font-size: px2rem(30);
+                }
+                .product_con{
+                    width: px2rem(710);
+                    height: px2rem(335);
+                    margin-top: px2rem(50);
+                    margin-bottom: px2rem(30);
+                    position: relative;
+                    .con_show{
+                        width: px2rem(335);
+                        height: px2rem(300);
+                        position: absolute;
+                        left: 50%;
+                        top: px2rem(0);
+                        margin-left: px2rem(-167.5);
+                        background: url(../image/product/product_pc.png) no-repeat center;   
+                        background-size: px2rem(335) px2rem(300);
+                    }
+                    .con_show_phone{
+                        width: px2rem(335);
+                        height: px2rem(300);
+                        position: absolute;
+                        left: 50%;
+                        top: px2rem(0);
+                        margin-left: px2rem(-167.5);
+                        background: url(../image/product/phone.png) no-repeat center;   
+                        background-size: px2rem(335) px2rem(300);
+                    }
+                    img{
+                        width: px2rem(35);
+                        height: px2rem(65);
+                    }
+                    #product_left{
+                        position: absolute;
+                        left: px2rem(60);
+                        top: px2rem(85);
+                    }
+                    #product_right{
+                        position: absolute;
+                        right: px2rem(60);
+                        top: px2rem(85);
+                    }
+                    .name_show{
+                        position: absolute;
+                        bottom: px2rem(0);
+                        left: 50%;
+                        margin-left: px2rem(-40);
+                        width: px2rem(80);
+                        height: px2rem(35);
+                        line-height: px2rem(35);
+                        color: #ec6232;
+                        font-size: px2rem(35);
+                        text-align: center;
+                    }
+                }
+                .product_text{
+                    width: px2rem(710);
+                    border: px2rem(3) solid #d6d6d6;
+                    border-radius: px2rem(20);
+                    font-size: px2rem(21);
+                    color: #666666;
+                    box-sizing: border-box;
+                    padding:px2rem(20) px2rem(30);
+                }
+            }
+            
+        }
+    }
+}
+.section-11{
+    .contact_pos{
+        position: absolute;
+        margin-top: px2rem(200);
+        width: 100%;
+        .contact_con{
+            width: 100%;
+            .contact_title{
+                width: 100%;
+                margin-top: px2rem(50);
+                margin-bottom: px2rem(60);
+                .list{
+                    width: px2rem(200);
+                    float: left;
+                    img{
+                        width: px2rem(84);
+                        height: px2rem(84);
+                        margin-left: px2rem(58);
+                    }
+                    .qq{
+                        width: px2rem(200);
+                        text-align: center;
+                    }
+                }
+                .list:nth-child(1){
+                    margin-left: px2rem(30);
+                    margin-right: px2rem(45);
+                }
+                .list:nth-child(2){
+                    margin-right: px2rem(45);
+                }
+            }
+            .code{
+                width: 100%;
+                height: px2rem(180);
+                position: relative;
+                img{
+                    width: px2rem(180);
+                    height: px2rem(180);
+                    position: absolute;
+                    left: 50%;
+                    margin-left: px2rem(-90);
+                }
+            }
+            #J_mapCtn{
+                width: px2rem(710);
+                height: px2rem(300);
+                margin: 0 auto;
+                margin-top: px2rem(60);
+                margin-bottom: px2rem(60);
+                border: px2rem(6) solid #a7c0e0;
+                border-radius: px2rem(10);
+
+            }
+            .pages11_bottom{
+                width: 100%;
+                .page11_title{
+                    width: 100%;
+                    text-align: center;
+                    color: #00b7ee;
+                    font-size: px2rem(26);
+                padding-bottom: px2rem(25);
+                }
+                .list{
+                    width: 100%;
+                    text-align: center;
+                    color: #666666;
+                    font-size: px2rem(20);
+                    padding-bottom: px2rem(30);
+                }
+            }
+        }
     }
 }

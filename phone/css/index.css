@@ -52,7 +52,7 @@
 .section-wrap .section .title {
   width: 100%;
   position: absolute;
-  top: 10%;
+  top: 3.2rem;
   color: #fff;
   font-size: 2.4em;
   text-align: center; }
@@ -259,5 +259,272 @@
           text-align: left; }
     .section-5 .sever_pos .sever_con .con_text:nth-child(2n-1) {
       margin-right: 2.13333rem; }
+
+.section-6 .page6_pos {
+  position: absolute;
+  margin-top: 5.33333rem;
+  width: 100%;
+  color: #333333; }
+  .section-6 .page6_pos .list {
+    width: 100%;
+    height: 3.88267rem;
+    background-color: #FFFFFF;
+    margin-bottom: 0.42667rem; }
+    .section-6 .page6_pos .list img {
+      width: 1.28rem;
+      height: 3.88267rem;
+      float: left;
+      margin-left: 1.28rem;
+      margin-right: 1.28rem; }
+    .section-6 .page6_pos .list .text {
+      float: left;
+      width: 12.16rem;
+      height: 3.88267rem; }
+      .section-6 .page6_pos .list .text h1 {
+        padding-top: 0.64rem; }
+      .section-6 .page6_pos .list .text .text_p {
+        width: 12.16rem;
+        margin-top: 0.64rem;
+        font-size: 0.46933rem;
+        padding-right: 0.42667rem; }
+  .section-6 .page6_pos .list4 {
+    height: 4.48rem; }
+    .section-6 .page6_pos .list4 img {
+      width: 1.28rem;
+      height: 4.48rem; }
+
+.section-7 .page7_pos {
+  position: absolute;
+  margin-top: 5.33333rem;
+  width: 100%;
+  color: #333333; }
+  .section-7 .page7_pos .list {
+    width: 100%;
+    height: 2.13333rem;
+    background-color: #FFFFFF;
+    margin-bottom: 1.87733rem; }
+    .section-7 .page7_pos .list img {
+      width: 2.13333rem;
+      height: 2.13333rem;
+      float: left;
+      margin-left: 0.85333rem;
+      margin-right: 0.85333rem; }
+    .section-7 .page7_pos .list .text {
+      float: left;
+      width: 12.16rem;
+      height: 2.13333rem; }
+      .section-7 .page7_pos .list .text h1 {
+        padding-top: 0.32rem; }
+      .section-7 .page7_pos .list .text .text_p {
+        color: #666666;
+        width: 12.16rem;
+        font-size: 0.46933rem;
+        padding-right: 0.42667rem; }
+
+.section-8 .qs_pos {
+  position: absolute;
+  margin-top: 5.97333rem;
+  width: 100%; }
+  .section-8 .qs_pos .qs_con {
+    margin: 0 auto;
+    margin-bottom: 0.68267rem;
+    width: 14.93333rem;
+    height: 3.28533rem;
+    padding-left: 0.512rem;
+    border-left: 0.128rem solid #e0e0e0;
+    box-sizing: border-box; }
+    .section-8 .qs_pos .qs_con .q {
+      font-size: 0.59733rem;
+      color: #d23023; }
+    .section-8 .qs_pos .qs_con .a {
+      font-size: 0.46933rem;
+      color: #808080; }
+
+.section-9 .pos {
+  position: absolute;
+  margin-top: 5.33333rem;
+  width: 100%; }
+  .section-9 .pos img {
+    width: 100%;
+    height: 6.44267rem; }
+  .section-9 .pos .con {
+    margin: 0 auto;
+    width: 15.18933rem;
+    margin-top: 1.00267rem; }
+    .section-9 .pos .con .con_text {
+      float: left;
+      width: 3.09333rem;
+      margin-right: 0.93867rem;
+      margin-bottom: 1.06667rem; }
+      .section-9 .pos .con .con_text img {
+        width: 3.09333rem;
+        height: 1.55733rem; }
+      .section-9 .pos .con .con_text .text {
+        width: 3.09333rem;
+        font-size: 0.40533rem;
+        color: #666666;
+        text-align: center; }
+    .section-9 .pos .con .con_text:nth-child(4n) {
+      margin-right: 0rem; }
+
+.section-10 {
+  overflow: scroll; }
+  .section-10 .pos {
+    position: absolute;
+    margin-top: 1.92rem;
+    width: 100%; }
+    .section-10 .pos .con {
+      width: 100%; }
+      .section-10 .pos .con img {
+        width: 100%;
+        height: 8.21333rem; }
+      .section-10 .pos .con .download {
+        width: 100%;
+        background-color: #FFFFFF;
+        margin-top: 0.896rem;
+        margin-bottom: 1.57867rem; }
+        .section-10 .pos .con .download .list {
+          float: left;
+          width: 2.98667rem; }
+          .section-10 .pos .con .download .list img {
+            width: 2.98667rem;
+            height: 2.98667rem; }
+          .section-10 .pos .con .download .list .text {
+            width: 2.98667rem;
+            text-align: center;
+            font-size: 0.512rem;
+            color: #333333; }
+          .section-10 .pos .con .download .list button {
+            width: 2.56rem;
+            margin-left: 0.21333rem;
+            height: 0.93867rem;
+            color: #FFFFFF;
+            background-color: #2ebdce; }
+        .section-10 .pos .con .download .list:nth-child(1) {
+          margin-left: 3.2rem;
+          margin-right: 3.84rem; }
+      .section-10 .pos .con .product_shows {
+        width: 15.14667rem;
+        margin: 0 auto;
+        margin-bottom: 1.06667rem; }
+        .section-10 .pos .con .product_shows .product_header {
+          border-left: 0.10667rem solid #23B9CB;
+          padding-left: 0.42667rem;
+          height: 0.64rem;
+          line-height: 0.64rem;
+          color: #333333;
+          font-size: 0.64rem; }
+        .section-10 .pos .con .product_shows .product_con {
+          width: 15.14667rem;
+          height: 7.14667rem;
+          margin-top: 1.06667rem;
+          margin-bottom: 0.64rem;
+          position: relative; }
+          .section-10 .pos .con .product_shows .product_con .con_show {
+            width: 7.14667rem;
+            height: 6.4rem;
+            position: absolute;
+            left: 50%;
+            top: 0rem;
+            margin-left: -3.57333rem;
+            background: url(../image/product/product_pc.png) no-repeat center;
+            background-size: 7.14667rem 6.4rem; }
+          .section-10 .pos .con .product_shows .product_con .con_show_phone {
+            width: 7.14667rem;
+            height: 6.4rem;
+            position: absolute;
+            left: 50%;
+            top: 0rem;
+            margin-left: -3.57333rem;
+            background: url(../image/product/phone.png) no-repeat center;
+            background-size: 7.14667rem 6.4rem; }
+          .section-10 .pos .con .product_shows .product_con img {
+            width: 0.74667rem;
+            height: 1.38667rem; }
+          .section-10 .pos .con .product_shows .product_con #product_left {
+            position: absolute;
+            left: 1.28rem;
+            top: 1.81333rem; }
+          .section-10 .pos .con .product_shows .product_con #product_right {
+            position: absolute;
+            right: 1.28rem;
+            top: 1.81333rem; }
+          .section-10 .pos .con .product_shows .product_con .name_show {
+            position: absolute;
+            bottom: 0rem;
+            left: 50%;
+            margin-left: -0.85333rem;
+            width: 1.70667rem;
+            height: 0.74667rem;
+            line-height: 0.74667rem;
+            color: #ec6232;
+            font-size: 0.74667rem;
+            text-align: center; }
+        .section-10 .pos .con .product_shows .product_text {
+          width: 15.14667rem;
+          border: 0.064rem solid #d6d6d6;
+          border-radius: 0.42667rem;
+          font-size: 0.448rem;
+          color: #666666;
+          box-sizing: border-box;
+          padding: 0.42667rem 0.64rem; }
+
+.section-11 .contact_pos {
+  position: absolute;
+  margin-top: 4.26667rem;
+  width: 100%; }
+  .section-11 .contact_pos .contact_con {
+    width: 100%; }
+    .section-11 .contact_pos .contact_con .contact_title {
+      width: 100%;
+      margin-top: 1.06667rem;
+      margin-bottom: 1.28rem; }
+      .section-11 .contact_pos .contact_con .contact_title .list {
+        width: 4.26667rem;
+        float: left; }
+        .section-11 .contact_pos .contact_con .contact_title .list img {
+          width: 1.792rem;
+          height: 1.792rem;
+          margin-left: 1.23733rem; }
+        .section-11 .contact_pos .contact_con .contact_title .list .qq {
+          width: 4.26667rem;
+          text-align: center; }
+      .section-11 .contact_pos .contact_con .contact_title .list:nth-child(1) {
+        margin-left: 0.64rem;
+        margin-right: 0.96rem; }
+      .section-11 .contact_pos .contact_con .contact_title .list:nth-child(2) {
+        margin-right: 0.96rem; }
+    .section-11 .contact_pos .contact_con .code {
+      width: 100%;
+      height: 3.84rem;
+      position: relative; }
+      .section-11 .contact_pos .contact_con .code img {
+        width: 3.84rem;
+        height: 3.84rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -1.92rem; }
+    .section-11 .contact_pos .contact_con #J_mapCtn {
+      width: 15.14667rem;
+      height: 6.4rem;
+      margin: 0 auto;
+      margin-top: 1.28rem;
+      margin-bottom: 1.28rem;
+      border: 0.128rem solid #a7c0e0;
+      border-radius: 0.21333rem; }
+    .section-11 .contact_pos .contact_con .pages11_bottom {
+      width: 100%; }
+      .section-11 .contact_pos .contact_con .pages11_bottom .page11_title {
+        width: 100%;
+        text-align: center;
+        color: #00b7ee;
+        font-size: 0.55467rem;
+        padding-bottom: 0.53333rem; }
+      .section-11 .contact_pos .contact_con .pages11_bottom .list {
+        width: 100%;
+        text-align: center;
+        color: #666666;
+        font-size: 0.42667rem;
+        padding-bottom: 0.64rem; }
 
 /*# sourceMappingURL=index.css.map */
