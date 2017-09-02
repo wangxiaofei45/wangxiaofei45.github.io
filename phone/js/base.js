@@ -115,6 +115,7 @@ $(function() {
 		});
 		/*翻页按钮点击*/
 		$arrow.one('click', go);
+
 		function go() {
 			up();
 			run();
@@ -122,29 +123,29 @@ $(function() {
 				$arrow.one('click', go)
 			}, 1000)
 		};
-		//判断是否到顶部
-		$(".section-10 .pos").scroll(function() {
-              if($(this).scrollTop()==0){
-              	        down();
-						run();
-              }else if($(this).scrollTop()==3176){
-              	up();
-						run();
-              }
+		$(".section-10 .pos").scroll(function() {　
+			var scrollTop = $(this).scrollTop();
+			var scrollHeight = $(".section-10 .pos .con").height();
+			var windowHeight = $('.section-10 .pos').height();
+			if(scrollTop + windowHeight+1 >= scrollHeight) {
+				up();
+				run();
+			} else if(scrollTop <= 0) {
+				down();
+				run();
+			}
 		});
-		/*手机滑动 区分和页面10进行区分*/
 		$(".section-1 , .section-2 , .section-3 , .section-4 , .section-5 , .section-6 , .section-7 , .section-8 , .section-9 , .section-11").swipe({
-				swipe: function(event, direction, distance, duration, fingerCount) {
-					if(direction == "up") {
-						up();
-						run();
-					} else if(direction == "down") {
-						down();
-						run();
-					}
+			swipe: function(event, direction, distance, duration, fingerCount) {
+				if(direction == "up") {
+					up();
+					run();
+				} else if(direction == "down") {
+					down();
+					run();
 				}
 			}
-		);
+		});
 	});
 
 })

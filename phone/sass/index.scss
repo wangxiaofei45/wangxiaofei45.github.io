@@ -474,11 +474,10 @@ $designWidth: 750;
         width: 100%;
         .con{
             width: 100%;
-            height: px2rem(3040);
-            position: absolute;
-            top: px2rem(90);
-            left: px2rem(0);
+            height: px2rem(3325);
+            overflow: hidden;
             img{
+                margin-top: px2rem(90);
                 width: 100%;
                 height: px2rem(385);
             }
