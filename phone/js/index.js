@@ -67,4 +67,7 @@ $(function() {
 	marker.addEventListener('click', function() {
 		map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
 	});
+			
+		
+
 })

@@ -18,6 +18,7 @@ $designWidth: 750;
     position: fixed;
     left: px2rem(0);
     top: px2rem(0);
+    box-sizing: border-box;
     .logo {
         width: px2rem(280);
         height: px2rem(60);
@@ -282,14 +283,14 @@ $designWidth: 750;
 .section-5{
     .sever_pos{
         position: absolute;
-        margin-top: px2rem(420);
+        margin-top: px2rem(250);
         width: 100%;
         .sever_con{
-            width: px2rem(620);
+            width: px2rem(650);
             margin:0 auto;
             .con_text{
                 text-align: center;
-                width: px2rem(260);
+                width: px2rem(280);
                 height: px2rem(350);
                 margin-bottom: px2rem(110);
                 float: left;
@@ -301,7 +302,7 @@ $designWidth: 750;
                 }
                 .text{
                     box-sizing: border-box;
-                    width: px2rem(260);
+                    width: px2rem(280);
                     height: px2rem(310);
                     border: px2rem(3) solid #b3b3b3;
                     border-radius: px2rem(20);
@@ -321,7 +322,7 @@ $designWidth: 750;
                 }
             }
             .con_text:nth-child(2n-1){
-                margin-right: px2rem(100);
+                margin-right: px2rem(90);
             }
         }        
     }
@@ -466,13 +467,17 @@ $designWidth: 750;
 }
 //产品
 .section-10{
-    overflow: scroll;
     .pos{
-         position: absolute;
-        margin-top: px2rem(90);
+        position: absolute;
+        overflow: scroll;
+        height: 100%;
         width: 100%;
         .con{
             width: 100%;
+            height: px2rem(3040);
+            position: absolute;
+            top: px2rem(90);
+            left: px2rem(0);
             img{
                 width: 100%;
                 height: px2rem(385);
