@@ -85,7 +85,6 @@ $(function() {
 		function up() {
 			i++;
 			if(i == $btn.length) {
-				//				i = 0;
 				i = $btn.length - 1;
 
 			};
@@ -94,27 +93,19 @@ $(function() {
 		function down() {
 			i--;
 			if(i < 0) {
-				//				i = $btn.length - 1
 				i = 0;
 			};
 		}
 
 		/*页面滑动*/
-
 		function run() {
-
 			$btn.eq(i).addClass('on').siblings().removeClass('on');
-
 			$wrap.attr("class", "section-wrap").addClass(function() {
 				return "put-section-" + i;
 			}).find('.section').eq(i).find('.title').addClass('active');
-
 		};
-
 		/*导航按钮点击*/
-
 		$btn.each(function(index) {
-
 			$(this).click(function() {
 				i = index;
 				run();
@@ -122,35 +113,24 @@ $(function() {
 			})
 
 		});
-
 		/*翻页按钮点击*/
-
 		$arrow.one('click', go);
-
 		function go() {
-
 			up();
 			run();
-
 			setTimeout(function() {
 				$arrow.one('click', go)
 			}, 1000)
-
 		};
 		//判断是否到顶部
 		$(".section-10 .pos").scroll(function() {
-			console.log($(this).scrollTop())
-				$(".section-10 .pos .con").swipe({
-					swipe: function(event, direction, distance, duration, fingerCount) {
-						if(direction == "up" && $(".section-10 .pos").scrollTop() == 3176) {
-							up();
-							run();
-						} else if(direction == "down" && $(".section-10 .pos").scrollTop() == 0) {
-							down();
-							run();
-						}
-					}
-				});
+              if($(this).scrollTop()==0){
+              	        down();
+						run();
+              }else if($(this).scrollTop()==3176){
+              	up();
+						run();
+              }
 		});
 		/*手机滑动 区分和页面10进行区分*/
 		$(".section-1 , .section-2 , .section-3 , .section-4 , .section-5 , .section-6 , .section-7 , .section-8 , .section-9 , .section-11").swipe({
@@ -163,34 +143,8 @@ $(function() {
 						run();
 					}
 				}
-
 			}
-
 		);
-
-		//王肖飞
-
-		//鼠标滚动将要删除
-		//		$wrap.on("swipeleft", function() {
-		//			alert("You swiped left!");
-		//		});
-		//		$wrap.one('mousewheel', mouse_);
-		//
-		//		function mouse_(event) {
-		//
-		//			if(event.deltaY < 0) {
-		//				up()
-		//			} else {
-		//				down()
-		//			}
-		//
-		//			run();
-		//
-		//			setTimeout(function() {
-		//				$wrap.one('mousewheel', mouse_)
-		//			}, 1000)
-		//
-		//		};
 	});
 
 })
