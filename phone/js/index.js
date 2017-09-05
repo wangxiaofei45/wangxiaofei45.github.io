@@ -24,7 +24,6 @@ $(function() {
 	//了解DCLbanner
 	var indexs = 0;
 	var twotimer = null;
-
 	function dolunbo2() {
 		timer = setInterval(function() {
 			indexs++;
@@ -35,20 +34,61 @@ $(function() {
 		}, 2000);
 	};
 	dolunbo2();
-
 	function shows() {
 		$('.timeline ul li').eq(indexs).addClass('current').siblings().removeClass('current');
 	}
-	$('.timeline ul li').mouseover(function() {
-		indexs = $(this).indexs();
-		shows();
-		clearInterval(twotimer);
+	//产品展示的左右按钮点击
+	//1
+	var phone_show = 0;
+	$('.left_1').click(function(){
+		img_left("#show_1");
+	});
+	$('.right_1').click(function(){
+		img_right("#show_1");
 	})
-	$('.timeline ul li').mouseout(function() {
-		indexs = $(this).indexs();
-		dolunbo2();
+	//2
+	$('.left_2').click(function(){
+		img_left("#show_2");
+	});
+	$('.right_2').click(function(){
+		img_right("#show_2")
 	})
-	
+	//3
+	$('.left_3').click(function(){
+		img_left("#show_3");
+	});
+	$('.right_3').click(function(){
+			img_right("#show_3")
+	})
+	//4
+	$('.left_4').click(function(){
+		img_left("#show_4");
+	});
+	$('.right_4').click(function(){
+		img_right("#show_4")
+	})
+	//函数封装
+	function img_left(name){
+		phone_show --;
+		if(phone_show<=0){
+			phone_show = $(name).find('img').length;
+		}
+		$(name).find('img').eq(phone_show).fadeIn(1000).siblings().fadeOut();
+		$(name).siblings('.name_show').find('p').eq(phone_show).fadeIn(1000).siblings().fadeOut();
+	}
+	function img_right(name){
+		phone_show ++;
+		if(phone_show == $(name).find('img').length){
+			phone_show = 0;
+		}
+		$(name).find('img').eq(phone_show).fadeIn(1000).siblings().fadeOut();
+		$(name).siblings('.name_show').find('p').eq(phone_show).fadeIn(1000).siblings().fadeOut();
+	}
+	//联系方式
+	$('.contact_title .list img').click(function(){
+		$(this).hide().siblings("img").show();
+		$(this).siblings('.qq').toggleClass('qq_hiden');
+	})
 	//地图
 	var map = new BMap.Map("J_mapCtn"); // 创建Map实例
 	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11); // 初始化地图,设置中心点坐标和地图级别
@@ -62,12 +102,8 @@ $(function() {
 		title: "杭州领沃科技有限公司" // 信息窗口标题     
 	}
 	var infoWindow = new BMap.InfoWindow("地址：杭州市江干区玖堡精品5D006 <br /> 电话：15736748889"); // 创建信息窗口对象      
-
 	map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
 	marker.addEventListener('click', function() {
 		map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
 	});
-			
-		
-
 })

@@ -129,7 +129,7 @@
 .section-3 .page3_banner {
   width: 100%;
   height: 7.46667rem;
-  background: url(../image/about/aboutbg-pic.png) no-repeat center;
+  background: url(../image/about/aboutbg-pic.jpg) no-repeat center;
   background-size: cover;
   position: absolute;
   margin-top: 4.90667rem; }
@@ -189,7 +189,10 @@
 .section-3 .page3_text {
   position: absolute;
   top: 12.8rem;
-  padding: 0.42667rem 0.85333rem; }
+  padding: 0.42667rem 0.85333rem;
+  text-align: justify;
+  font-size: 0.512rem;
+  text-indent: 1.024rem; }
 
 .section-4 .people {
   position: absolute;
@@ -432,6 +435,16 @@
           margin-left: -3.57333rem;
           background: url(../image/product/product_pc.png) no-repeat center;
           background-size: 7.14667rem 6.4rem; }
+          .section-10 .pos .con .product_shows .product_con .con_show img {
+            width: 6.50667rem;
+            height: 3.712rem;
+            margin: 0rem;
+            position: absolute;
+            top: 0.72533rem;
+            left: 0.384rem;
+            display: none; }
+          .section-10 .pos .con .product_shows .product_con .con_show img:nth-child(1) {
+            display: block; }
         .section-10 .pos .con .product_shows .product_con .con_show_phone {
           width: 7.14667rem;
           height: 6.4rem;
@@ -441,6 +454,16 @@
           margin-left: -3.57333rem;
           background: url(../image/product/phone.png) no-repeat center;
           background-size: 7.14667rem 6.4rem; }
+          .section-10 .pos .con .product_shows .product_con .con_show_phone img {
+            width: 2.70933rem;
+            height: 4.8rem;
+            margin: 0rem;
+            position: absolute;
+            top: 0.81067rem;
+            left: 2.21867rem;
+            display: none; }
+          .section-10 .pos .con .product_shows .product_con .con_show_phone img:nth-child(1) {
+            display: block; }
         .section-10 .pos .con .product_shows .product_con img {
           width: 0.74667rem;
           height: 1.38667rem; }
@@ -463,6 +486,10 @@
           color: #ec6232;
           font-size: 0.74667rem;
           text-align: center; }
+          .section-10 .pos .con .product_shows .product_con .name_show p {
+            display: none; }
+          .section-10 .pos .con .product_shows .product_con .name_show p:nth-child(1) {
+            display: block; }
       .section-10 .pos .con .product_shows .product_text {
         width: 15.14667rem;
         border: 0.064rem solid #d6d6d6;
@@ -489,9 +516,13 @@
           width: 1.792rem;
           height: 1.792rem;
           margin-left: 1.23733rem; }
+        .section-11 .contact_pos .contact_con .contact_title .list img:nth-child(2) {
+          display: none; }
         .section-11 .contact_pos .contact_con .contact_title .list .qq {
           width: 4.26667rem;
           text-align: center; }
+        .section-11 .contact_pos .contact_con .contact_title .list .qq_hiden {
+          display: none; }
       .section-11 .contact_pos .contact_con .contact_title .list:nth-child(1) {
         margin-left: 0.64rem;
         margin-right: 0.96rem; }
@@ -507,6 +538,12 @@
         position: absolute;
         left: 50%;
         margin-left: -1.92rem; }
+    .section-11 .contact_pos .contact_con .hint {
+      width: 100;
+      height: 0.64rem;
+      line-height: 0.64rem;
+      color: red;
+      text-align: center; }
     .section-11 .contact_pos .contact_con #J_mapCtn {
       width: 15.14667rem;
       height: 6.4rem;
@@ -527,7 +564,6 @@
         width: 100%;
         text-align: center;
         color: #666666;
-        font-size: 0.42667rem;
-        padding-bottom: 0.64rem; }
+        font-size: 0.42667rem; }
 
 /*# sourceMappingURL=index.css.map */

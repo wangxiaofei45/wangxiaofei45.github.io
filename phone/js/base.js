@@ -79,14 +79,12 @@ $(function() {
 	$(function() {
 		var i = 0;
 		var $btn = $('.section-btn li'),
-			$wrap = $('.section-wrap'),
-			$arrow = $('.arrow');
+			$wrap = $('.section-wrap');
 		/*当前页面赋值*/
 		function up() {
 			i++;
 			if(i == $btn.length) {
 				i = $btn.length - 1;
-
 			};
 		}
 
@@ -111,18 +109,8 @@ $(function() {
 				run();
 				$('.section-btn').fadeToggle("slow");
 			})
-
 		});
 		/*翻页按钮点击*/
-		$arrow.one('click', go);
-
-		function go() {
-			up();
-			run();
-			setTimeout(function() {
-				$arrow.one('click', go)
-			}, 1000)
-		};
 		$(".section-10 .pos").scroll(function() {　
 			var scrollTop = $(this).scrollTop();
 			var scrollHeight = $(".section-10 .pos .con").height();

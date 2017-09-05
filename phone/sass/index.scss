@@ -158,13 +158,12 @@ $designWidth: 750;
         }
     }
 }
-
 //了解DCL
 .section-3 {
     .page3_banner {
         width: 100%;
         height: px2rem(350);
-        background: url(../image/about/aboutbg-pic.png) no-repeat center;
+        background: url(../image/about/aboutbg-pic.jpg) no-repeat center;
         background-size: cover;
         position: absolute;
         margin-top: px2rem(230);
@@ -236,6 +235,10 @@ $designWidth: 750;
         position: absolute;
         top: px2rem(600);
         padding: px2rem(20) px2rem(40);
+        text-align: justify;
+        font-size: px2rem(24);
+        text-indent:px2rem(48);
+        
     }
 }
 //走进DCL
@@ -540,6 +543,18 @@ $designWidth: 750;
                         margin-left: px2rem(-167.5);
                         background: url(../image/product/product_pc.png) no-repeat center;   
                         background-size: px2rem(335) px2rem(300);
+                        img{
+                            width: px2rem(305);
+                            height: px2rem(174);
+                            margin: px2rem(0);
+                            position: absolute;
+                            top: px2rem(34);
+                            left: px2rem(18);
+                            display: none;
+                        }
+                        img:nth-child(1){
+                            display: block;
+                        }
                     }
                     .con_show_phone{
                         width: px2rem(335);
@@ -550,6 +565,18 @@ $designWidth: 750;
                         margin-left: px2rem(-167.5);
                         background: url(../image/product/phone.png) no-repeat center;   
                         background-size: px2rem(335) px2rem(300);
+                        img{
+                            width: px2rem(127);
+                            height: px2rem(225);
+                            margin: px2rem(0);
+                            position: absolute;
+                            top: px2rem(38);
+                            left: px2rem(104);
+                            display: none;
+                        }
+                        img:nth-child(1){
+                            display: block;
+                        }
                     }
                     img{
                         width: px2rem(35);
@@ -576,6 +603,12 @@ $designWidth: 750;
                         color: #ec6232;
                         font-size: px2rem(35);
                         text-align: center;
+                        p{
+                            display: none;
+                        }
+                        p:nth-child(1){
+                            display: block;
+                        }
                     }
                 }
                 .product_text{
@@ -611,9 +644,15 @@ $designWidth: 750;
                         height: px2rem(84);
                         margin-left: px2rem(58);
                     }
+                    img:nth-child(2){
+                        display: none;
+                    }
                     .qq{
                         width: px2rem(200);
                         text-align: center;
+                    }
+                    .qq_hiden{
+                        display: none;
                     }
                 }
                 .list:nth-child(1){
@@ -635,6 +674,13 @@ $designWidth: 750;
                     left: 50%;
                     margin-left: px2rem(-90);
                 }
+            }
+            .hint{
+                width: 100;
+                height: px2rem(30);
+                line-height: px2rem(30);
+                color: red;
+                text-align: center;
             }
             #J_mapCtn{
                 width: px2rem(710);
@@ -660,7 +706,6 @@ $designWidth: 750;
                     text-align: center;
                     color: #666666;
                     font-size: px2rem(20);
-                    padding-bottom: px2rem(30);
                 }
             }
         }
