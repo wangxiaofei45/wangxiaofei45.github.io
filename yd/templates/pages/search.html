@@ -1,0 +1,118 @@
+<div ng-controller="searchCtrl" class="search">
+	<div class="searchBox-wrap">
+		<div class="container search-container">
+			<div class="searchBox row row-flex">
+					<div class="col form-group">
+						<select name="" id="" class="form-control"
+							ng-options="v.category_name for v in categories"
+							ng-model="search.category"
+						
+							ng-change="setSearchCategory()"
+							>
+							<option value="">请选择</option>
+						</select>
+					</div>
+					<div class="col form-group">
+						<input ng-change="setSearchDate()" ng-model="search.date" type="date" min="{{today|date:'yyyy-MM-dd'}}" max="{{maxDay|date:'yyyy-MM-dd'}}" class="form-control" placeholder="运动日期" />
+					</div>
+					<div class="col form-group">
+						<select name="" id="" class="form-control"
+							ng-options="v.value as v.name for v in time"
+							ng-model="search.time"
+							ng-change="loadStadium(1)"
+							>
+							
+						</select>
+					</div>
+					<div class="col form-group">
+						<input type="text" class="form-control" placeholder="场馆名称" 
+							ng-model="search.keyword"
+							ng-change="loadStadium(1)"
+							/>
+					</div>
+					<div class="col form-group">
+						<input type="button" class="form-control btn-danger bg-yd" ng-click="loadStadium(1)" value="快速查询" />
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="container address-container">
+		<div class="row">
+			<div class="col-md-1 text-left text-bold text-active">区域:</div>
+			<div class="col-md-11">
+				<a href="" class="text-active " ng-click="setSearchDistrict({district_id:''})"
+					ng-class="{'active':search.district_id==''}"
+					>全部</a>
+				<a href="" 
+					ng-repeat="item in districts"
+					ng-click="setSearchDistrict(item)"
+					ng-class="{'active':search.district_id==item.district_id}"
+					 >
+					 {{item.district_name}}</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 text-left text-bold text-active">商圈:</div>
+			<div class="col-md-11">
+				<a href="" class="text-active" 
+					ng-class="{'active':search.cbd_id==''}"
+					ng-click="setSearchCBD({cbd_id:''})"
+					>全部</a>
+				<a href="" 
+					ng-repeat="item in city_cbds"
+					ng-click="setSearchCBD(item)"
+					ng-class="{'active':search.cbd_id==item.cbd_id}"
+					>{{item.cbd_name}}</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 text-left text-bold text-active">特色筛选:</div>
+			<div class="col-md-11 text-left">
+				<a href="" 
+					ng-class="{'active':search.facility_id==''}"
+					ng-click="setSearchFacility({facility_id:''})"
+					 >全部</a>
+				<a href="" 
+					ng-repeat="item in facilitys"
+					ng-click="setSearchFacility(item)"
+					ng-class="{'active':search.facility_id==item.facility_id}"
+					>{{item.facility_name}}</a>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container sort-container">
+		<div class="pull-left">
+			共有 {{stadiums.length}} 家场馆满足条件
+		</div>
+		<div class="pull-right">
+			<a href="" ng-click="setSearchSort(1)"> 默认排序</a>
+			<a href="" ng-click="setSearchSort(1)">价格升序 <i class="glyphicon glyphicon-sort-by-attributes"></i></a>
+			<a href="" ng-click="setSearchSort(2)">价格降序 <i class="glyphicon glyphicon-sort-by-attributes-alt"></i></a>
+		</div>
+	</div>
+	<div class="container stadium-lists">
+		<div class="row clearfix" ng-repeat="item in stadiums">
+			<div class="col-md-6">
+				<i class="glyphicon glyphicon-chevron-right"></i>
+				<a href="#/stadium/{{item.id}}" >{{item.name}}</a>
+			</div>
+			<div class="col-md-3 facility-box">
+				<!--<div class="text-yd"><i class="glyphicon glyphicon-star "></i><i class="glyphicon glyphicon-star-empty"></i></div>-->
+				<div class="text-yd">
+					<yd-rank rank="item.rank"></yd-rank>
+				</div>
+				
+				<span ng-repeat="i in item.facility" class="facility">{{i.facility_name}}</span>
+			</div> 
+			<div class="col-md-3 price-box">
+				<h3>￥{{item.min_price}}</h3>
+				<a href="#/stadium/{{item.id}}">快速预定</a>
+				
+			</div>
+		</div>
+		<div class="text-center">
+			<button class="btn bg-yd btn-default btn-lg" ng-click="loadMore()" >加载更多</button>
+		</div>
+	</div>
+</div>

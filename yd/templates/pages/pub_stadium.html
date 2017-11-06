@@ -1,0 +1,79 @@
+<div ng-controller="pub_stadiumCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<select name="" id="" class="form-control"
+					ng-model="search.gov_activity_id"
+					ng-change="loadStadium()"
+					>
+					<option value="">全部</option>
+					<option value="{{item.id}}"  ng-repeat="item in gov_activity_lists">{{item.name}}</option>
+				</select>
+			</div>
+			<div class="col-md-3">
+				<input type="text" class="form-control" ng-model="search.keyword" />
+			</div>
+			
+			<div class="col-md-3">
+				<button class="btn btn-block" ng-click="loadStadium()">快速查询</button>
+			</div>
+		</div>
+	</div>
+		<div class="container address-container">
+		<div class="row">
+			<div class="col-md-1 text-left text-bold text-active">区域:</div>
+			<div class="col-md-11">
+				<a href="" class="text-active " ng-click="setSearchDistrict({district_id:''})"
+					ng-class="{'active':search.district_id==''}"
+					>全部</a>
+				<a href="" 
+					ng-repeat="item in districts"
+					ng-click="setSearchDistrict(item)"
+					ng-class="{'active':search.district_id==item.district_id}"
+					 >
+					 {{item.district_name}}</a>
+			</div>
+		</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<p class="pull-left"></p>
+				<p class="pull-right">共有 {{total_elements}} 家场所满足条件</p>
+			</div>
+		</div>
+		<div class="container pub-stadium-lists">
+			<div class="row" ng-repeat="item in pubStadiumLists">
+				<div class="col-md-3">
+					<img src="{{item.picture_url}}" alt="" width="80%" />
+				</div>
+				<div class="col-md-9">
+					<h3>{{item.name}}</h3>
+					<p>{{item.address}}</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--先把模态框写出来-->
+		<div class="loading" ng-show="showModal">
+			<div class="modal-backdrop fade in"></div>
+			<div class="modal fade in" style="display:block">
+				<div class="modal-dialog  modal-sm">
+					<div class="modal-content">
+						<div class="modal-body">
+							<h1>正在加载中</h1>
+							<p class="text-center">
+							<button class="btn btn-lg btn-danger"
+								ng-click="showModal=false"
+								 accesskey="">Ok</button>	
+							</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--弹出框结束-->
+</div>
+

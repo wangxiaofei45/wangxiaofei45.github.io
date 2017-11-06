@@ -1,0 +1,136 @@
+
+<div ng-controller="stadiumCtrl">
+	<div class="container">
+		<h2 class="text-active">{{stadium.name}} <yd-rank class="font-14" rank="stadium.rank"></yd-rank></h2>
+		<div>
+			<span class="font-14"><i class="glyphicon glyphicon-map-marker"></i>{{stadium.address}}</span>
+			<span class="font-14"><i class="glyphicon glyphicon-phone"></i>{{stadium.telephone}}</span>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="pic-wrap">
+					<img src="{{stadium.photo}}" alt=""  width="100%"  />
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div><img src="http://www.1yd.me/images/stadium/5.jpg" alt="" /></div>
+				<div class="mt-10"><img src="http://www.1yd.me/images/stadium/6.jpg" alt="" /></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 ">
+				<ul class="nav nav-tabs stadium-nav mt-30 row-flex clearfix" >
+					<li  ng-repeat="item in navData" 
+						ng-class="{'active':stadium_curDate==item.d}"
+						ng-click="setCurDate(item.d)"
+						class="col ml-10"
+						>
+						<a class="text-center text-yd" >
+							<span class="font-14">{{item.w}}</span>
+							<span class="font-24">{{item.d|date:'M-dd'}}</span>
+						</a>
+					</li>
+					
+				</ul>
+				<div class="text-center clearfix mt-10 stadium-fields">
+						<div class="pull-right mr-5">
+							<span class="col free"></span>
+							可预定
+						</div>
+						<div class="pull-right mr-5">
+							<span class="col ordered"></span>
+							已经占用
+						</div>	
+						<div class="pull-right mr-5">
+							<span class="col selected"></span>
+							已经选中
+						</div>	
+				</div>
+				<div class="fields stadium-fields">
+					<div class="left-title col-xs-2">
+						<span class="col no-border"></span>
+						<div class="" ng-repeat="item in fields">
+							<span class="col no-border">{{item.field_name}}号场地</span>
+						</div>
+						
+					</div>
+					
+					<div class="right-content col-xs-10">
+						<div class="fields-wrap" style="width:{{wrapWidth}}px">
+							<div class="clearfix">
+								<span class="col no-border pull-left" ng-repeat="item in fields[0].field_resource">{{item.start_period}}</span>
+							</div>
+							<div class="clearfix" ng-repeat="item in fields">
+								<span class="col pull-left" 
+									ng-repeat="col in item.field_resource"
+									ng-class="{'ordered':col.resource_status=='ordered','free':col.resource_status=='free','selected':col.selected==true}"
+									ng-click="setSelected(col)"
+									>
+									<span ng-if="col.resource_status=='free'&&!col.selected">{{col.price/100}}元</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--内容-->
+			<div class="col-md-3">
+				<h3 ng-bind="stadium.name"></h3>
+				<p>预定项目：</p>
+				<p>日期： {{stadium_curDate|date:'yyyy-M-dd'}}</p>
+				<div class="">
+					<span class="pull-left">场次：</span>
+					<div class="pull-left">
+						<div class="custom-order" ng-if="customOrder.length<=0" >你还没有预定</div>
+						<div class="custom-order" ng-repeat="item in customOrder">
+							{{item.start_period+'-'+item.end_period+' '+item.field_name}}
+							{{item.price/100}}元
+						</div>
+						<p>单击左侧选择场次，再次单击取消</p>
+						<p><button class="btn bg-yd">提交订单</button></p>
+					</div>
+				</div>
+			</div>
+			<!--侧边栏目-->
+		</div>
+	</div>
+	<div class="container comment">
+		<div class="row">
+			<h3>相关评论</h3>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-11">
+				<textarea name="" id="" class="form-control" rows="6">
+					
+				</textarea>
+				<div class="clearfix mt-10">
+					<div class="pull-left">我要打分 <yd-rank rank="0" class="text-yd"></yd-rank></div>
+					<div class="pull-right">
+					<button class="btn bg-yd">发表评论</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row comment-item clearfix" ng-repeat="item in comments">
+			<div class="col-xs-3 comment-user">
+				<div class="col-xs-6">
+					<div class="avatar">
+						<img src="{{item.user.user_photo}}" alt="" />
+					</div></div>
+				<div class="col-xs-6">
+					<span class="text-active">{{item.user.user_name}}</span>
+					<span class="rank bg-yd">{{item.rank}}</span>
+				</div>
+			</div>
+			<div class="col-xs-9 c-item-content">
+				{{item.comment}}
+				<div class="time">{{item.creation_time|date:'yyyy-MM-dd  HH:mm'}}</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

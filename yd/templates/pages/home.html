@@ -1,0 +1,81 @@
+<div ng-controller="homeCtrl">
+	<div class="jumbotron home-jumb">
+		<div class="container">
+			<div class="searchBox row row-flex">
+					<div class="col form-group">
+						<select name="" id="" class="form-control"
+							ng-options="v.category_name for v in categories"
+							ng-model="search.category"
+							
+							>
+							<option value="">请选择</option>
+						</select>
+					</div>
+					<div class="col form-group">
+						<input  ng-model="search.date" type="date" min="{{today|date:'yyyy-MM-dd'}}" max="{{maxDay|date:'yyyy-MM-dd'}}" class="form-control" placeholder="运动日期" />
+					</div>
+					<div class="col form-group">
+						<select name="" id="" class="form-control"
+							ng-options="v.value as v.name for v in time"
+							ng-model="search.time"
+							
+							>
+							
+						</select>
+					</div>
+					<div class="col form-group">
+						<input type="text" class="form-control" placeholder="场馆名称" 
+							ng-model="search.keyword"
+							
+							/>
+					</div>
+					<div class="col form-group">
+						<a  href="#/search" class="form-control btn-danger bg-yd text-center" >
+							 快速查询 
+						</a>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row text-center text-muted">
+			<h3>热门运动</h3>
+			<p >还等什么，快喊上小伙伴们运动吧</p>
+			<div class="row-flex">
+				<div class="col" ng-repeat="item in category" ng-if="item.category_thum_img">
+					<div class="category_icon" style="background-image:url(http://www.1yd.me/{{item.category_thum_img}})">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row text-muted text-center">
+			<h3>推荐场馆</h3>
+			<p>经过评测，向您推荐以下场馆</p>
+		</div>
+		<div class="row">
+			<div class="col-md-4 stadium-box" ng-repeat="item in stadiums">
+				<div class="thumbnail">
+					<div class="thum-wrap">
+					<a href="#/stadium/{{item.id}}">
+						<img src="{{item.photo}}" alt="" />
+					</a>
+					</div>
+					<div class="caption clearfix">
+						<div class="col-xs-8">
+							<h4>{{item.name}}</h4>
+							<p class="text-muted">{{item.address}}</p>
+						</div>
+						<div class="col-xs-4">
+							<h4 class="text-yd">{{item.min_price|number:0}}元</h4>
+							<p><a href="#/stadium/{{item.id}}" class="btn btn-danger bg-yd">
+								在线预订
+							</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

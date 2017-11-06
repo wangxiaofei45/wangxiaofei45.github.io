@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="ydApp" ng-controller="ydCtrl">
+	<head>
+		<meta charset="UTF-8">
+		<title>我要运动</title>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="lib/bootstrap-3.0.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="navbar bg-yd yd-navbar" ng-class="{'home-navbar':navData.num==1}">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="" class=" navbar-brand pull-left">
+						<img src="images/logonew.png" alt="" />
+					</a>
+					<div class="dropdown pull-left">
+						<span class="dropdown-toggle"  data-toggle="dropdown">
+    						{{currentCity.city_name}}
+    					<span class="caret"></span>
+  						</span>
+						<ul class="dropdown-menu">
+							<li ng-repeat="item in cities" ng-click="setCurCity(item)"><a href="">{{item.city_name}}</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="navbar-text navbar-right">
+					<img src="images/user_logo.png" alt="" />
+					<a href="" class="navbar-link">登录</a>
+					<a href="" class="navbar-link">注册</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/home" ng-class="{'active':navData.num==1}">首页</a></li>
+					<li><a href="#/search" ng-class="{'active':navData.num==2}">场馆</a></li>
+					<li><a href="#/pub_stadium" ng-class="{'active':navData.num==3}">社区公共体育设施</a></li>
+					<li><a href="#/swim_stadium" ng-class="{'active':navData.num==4}">游泳馆查询</a></li>
+					<li><a href="#/production" ng-class="{'active':navData.num==5}">产品介绍</a></li>
+					<li><a href="#/help" ng-class="{'active':navData.num==6}">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div ng-view>
+			
+		</div>
+		
+		<div class="footer">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-3">
+						<h3 class="text-yd">公司信息</h3>
+						<p><a href="">this is link1</a></p>
+						<p><a href="">this is link2</a></p>
+						<p><a href="">this is link3</a></p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="text-yd">公司信息</h3>
+						<p><a href="">this is link1</a></p>
+						<p><a href="">this is link2</a></p>
+						<p><a href="">this is link3</a></p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="text-yd">手机应用下载</h3>
+						<p><a href="">this is link1</a></p>
+						<p><a href="">this is link2</a></p>
+					</div>
+					<div class="col-md-3">
+						<p><img src="images/weixin.jpg" width="100" alt="" /></p>
+						<p>扫二维码关注微信公众号</p>
+					</div>
+				</div>
+				<p class="text-muted">版权所有：上海天健体育科技发展有限公司 沪ICP备14034023号-1 </p>
+			</div>
+		</div>
+		
+		<script src="lib/bootstrap-3.0.0/js/jquery-1.8.3.min.js"></script>
+		<script src="lib/bootstrap-3.0.0/js/bootstrap.js"></script>
+		<script src="lib/angular/angular.js"></script>
+		<script src="lib/angular/angular-route.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/services/search.js"></script>
+		<script src="js/controllers/searchCtrl.js"></script>
+		<script src="js/controllers/stadiumCtrl.js"></script>
+		<script src="js/controllers/pubStadiumCtrl.js"></script>
+		<script src="js/components/rank/rank.js"></script>
+	</body>
+</html>
