@@ -225,6 +225,7 @@
 				$('.submit').attr('disabled', true);
 			}
 		})
+		
 		$('#div').trigger('DOMNodeInserted');
 		
 		$('.shuru').click(function(e){
@@ -233,6 +234,7 @@
 			}, 200)
 			e.stopPropagation();
 		})
+		
 		$('.wrap').click(function(){
 			$('.layer-content').animate({
 				bottom: '-200px'
@@ -243,6 +245,7 @@
 			var oDiv = document.getElementById("div");
 			oDiv.innerHTML += this.innerHTML;
 		})
+		//删除在这
 		$('#remove').click(function(){
 			var oDiv = document.getElementById("div");
 			var oDivHtml = oDiv.innerHTML;

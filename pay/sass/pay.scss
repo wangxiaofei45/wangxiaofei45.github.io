@@ -25,15 +25,6 @@ body {
     bottom: 0px;
     background-color: #ebebeb;
 }
-.keyboard{
-    width: 100%;
-    height: px2rem(500);
-    background-color: red;
-    position: absolute;
-    bottom: px2rem(0);
-    left: px2rem(0);
-}
-
 .header{
     width: px2rem(390);
     min-width: px2rem(390);
@@ -71,20 +62,108 @@ body {
         }
     }
 }
+.cursor {
+    display: inline-block;
+    height: px2rem(80);
+    background: #677bff;
+    width: px2rem(3);
+    vertical-align: middle;
+    border-radius: 17%;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+    animation-name: cursor
+}
+@keyframes cursor {
+    0% {
+        opacity: 0
+    }
+    30% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes cursor {
+    0% {
+        opacity: 0
+    }
+    30% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
 .input{
     width: px2rem(660);
     height: px2rem(140);
+    line-height: px2rem(140);
     background-color: #ffffff;
     border: px2rem(1) solid #d6d6d6;
     border-radius: px2rem(10);
     margin: 0 auto;
     margin-top: px2rem(60);
-    position: relative;
-    input{
-        width: 100%;
-        height: 100%;
-        line-height: 100%;
-        font-size: px2rem(30);
-        padding-left: px2rem(25);
+    padding-left:px2rem(25);
+}
+.keyboard{
+    width: 100%;
+    position: absolute;
+    bottom: px2rem(0);
+    left: px2rem(0);
+}
+.list{
+    .num{
+        width: 25%;
+        height: px2rem(130);
+        line-height: px2rem(130);
+        text-align: center;
+        float: left;
+        background-color: #FFFFFF;
+    }
+    
+    .num:active{
+    background-color: rgba(0, 0, 0, .1);
+    }
+    
+     .num_con{
+        float: left;
+        width: 75%;
+        .num{
+            width: 33.33%;
+            float: left;
+            height: px2rem(130);
+            height: px2rem(130);
+            line-height: px2rem(130);
+        }
+    }
+    .sure{
+        width: 25%;
+        height: px2rem(390);
+        height: px2rem(390);
+        display:table; 
+        font-size: px2rem(40);
+        color: #FFFFFF;
+        background-color: #ff4965;
+        span{  
+             vertical-align:middle;  
+             display:table-cell;  
+            height: px2rem(60);
+            line-height: px2rem(60);
+            
+        }
     }
 }

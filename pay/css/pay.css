@@ -22,14 +22,6 @@ body {
   bottom: 0px;
   background-color: #ebebeb; }
 
-.keyboard {
-  width: 100%;
-  height: 10.66667rem;
-  background-color: red;
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem; }
-
 .header {
   width: 8.32rem;
   min-width: 8.32rem;
@@ -59,20 +51,86 @@ body {
       font-size: 0.512rem;
       color: #a8a8a8; }
 
+.cursor {
+  display: inline-block;
+  height: 1.70667rem;
+  background: #677bff;
+  width: 0.064rem;
+  vertical-align: middle;
+  border-radius: 17%;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-name: cursor; }
+
+@keyframes cursor {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes cursor {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 .input {
   width: 14.08rem;
   height: 2.98667rem;
+  line-height: 2.98667rem;
   background-color: #ffffff;
   border: 0.02133rem solid #d6d6d6;
   border-radius: 0.21333rem;
   margin: 0 auto;
   margin-top: 1.28rem;
-  position: relative; }
-  .input input {
-    width: 100%;
-    height: 100%;
-    line-height: 100%;
-    font-size: 0.64rem;
-    padding-left: 0.53333rem; }
+  padding-left: 0.53333rem; }
+
+.keyboard {
+  width: 100%;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem; }
+
+.list .num {
+  width: 25%;
+  height: 2.77333rem;
+  line-height: 2.77333rem;
+  text-align: center;
+  float: left;
+  background-color: #FFFFFF; }
+.list .num:active {
+  background-color: rgba(0, 0, 0, 0.1); }
+.list .num_con {
+  float: left;
+  width: 75%; }
+  .list .num_con .num {
+    width: 33.33%;
+    float: left;
+    height: 2.77333rem;
+    height: 2.77333rem;
+    line-height: 2.77333rem; }
+.list .sure {
+  width: 25%;
+  height: 8.32rem;
+  height: 8.32rem;
+  display: table;
+  font-size: 0.85333rem;
+  color: #FFFFFF;
+  background-color: #ff4965; }
+  .list .sure span {
+    vertical-align: middle;
+    display: table-cell;
+    height: 1.28rem;
+    line-height: 1.28rem; }
 
 /*# sourceMappingURL=pay.css.map */
