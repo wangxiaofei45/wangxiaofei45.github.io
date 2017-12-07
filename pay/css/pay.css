@@ -23,21 +23,19 @@ body {
   background-color: #ebebeb; }
 
 .header {
-  width: 8.32rem;
   height: 1.92rem;
-  min-width: 8.32rem;
   margin: 0 auto;
   margin-top: 1.49333rem;
-  align-items: center; }
+  text-align: center; }
   .header .left {
-    float: left;
+    display: inline-block;
     margin-right: 0.59733rem;
     width: 1.792rem;
     height: 1.792rem;
     border-radius: 50%;
     margin-top: 0.064rem; }
   .header .right {
-    float: left; }
+    display: inline-block; }
     .header .right p {
       font-size: 0.68267rem;
       color: #393a3f;
@@ -104,7 +102,17 @@ body {
     height: 11.09333rem; }
   100% {
     height: 0rem; } }
+@-webkit-keyframes hidden {
+  0% {
+    height: 11.09333rem; }
+  100% {
+    height: 0rem; } }
 @keyframes show {
+  0% {
+    height: 0rem; }
+  100% {
+    height: 11.09333rem; } }
+@-webkit-keyframes show {
   0% {
     height: 0rem; }
   100% {

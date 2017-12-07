@@ -30,14 +30,12 @@ body {
 }
 
 .header {
-    width: px2rem(390);
     height: px2rem(90);
-    min-width: px2rem(390);
     margin: 0 auto;
     margin-top: px2rem(70);
-    align-items: center;
+    text-align: center;
     .left {
-        float: left;
+        display: inline-block;       
         margin-right: px2rem(28);
         width: px2rem(84);
         height: px2rem(84);
@@ -45,7 +43,7 @@ body {
         margin-top: px2rem(3);
     }
     .right {
-        float: left;
+        display: inline-block;   
         p {
             font-size: px2rem(32);
             color: #393a3f;
@@ -134,7 +132,23 @@ body {
         height: px2rem(0);
     }
 }
+@-webkit-keyframes hidden{
+    0%{
+        height: px2rem(520);
+    }
+    100%{
+        height: px2rem(0);
+    }
+}
 @keyframes show{
+     0%{
+        height: px2rem(0);
+    }
+    100%{
+        height: px2rem(520);
+    }
+}
+@-webkit-keyframes show{
      0%{
         height: px2rem(0);
     }
