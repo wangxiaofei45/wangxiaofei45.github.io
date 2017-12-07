@@ -14,9 +14,7 @@
 		<div class="container">
 
 			<div class="header clearfix">
-				<div class="left">
-					<img src="text.png" />
-				</div>
+				<img class="left" src="img/demo.png" />
 				<div class="right">
 					<p class="name">江南美食(下沙店)</p>
 					<div class="wraning">
@@ -29,14 +27,22 @@
 			</div>
 
 			<div class="input">
+				<div class="left">
+					应付金额
+				</div>
+				<span id="posabs">
+					￥
+				</span>
 				<span id="number">
-					  
 				</span>
 				<span class="cursor">
-					
 				</span>
+				
 			</div>
-			<div class="keyboard">
+			<button class="sure_button active submit">
+				确认支付
+			</button>
+			<div class="keyboard show">
 				<div class="list clearfix">
 					<div class="num numbers">
 						1
@@ -48,7 +54,7 @@
 						3
 					</div>
 					<div class="num" id="remove">
-						<img src="img/delete.png"/>
+						<img src="img/delete.png" />
 					</div>
 				</div>
 				<div class="list clearfix">
@@ -71,8 +77,8 @@
 						<div class="num numbers">
 							9
 						</div>
-						<div class="num">
-							返回
+						<div class="num" id="key">
+							<img src="img/key.png"/>
 						</div>
 						<div class="num numbers">
 							0
@@ -82,7 +88,9 @@
 						</div>
 					</div>
 					<div class="num sure">
-						<span>确认<br>支付</span>
+						<button id="issure" class="active submit" >
+					    	确认<br>支付
+					    </button>
 					</div>
 				</div>
 			</div>
@@ -94,18 +102,47 @@
 			$(function() {
 				$('.numbers').click(function() {
 					var numbers = trim($('#number').html());
-                    var str = trim(this.innerHTML);
+					var str = trim(this.innerHTML);
 					numbers += str;
 					$('#number').html(numbers)
 				})
 			})
-
 			$('#remove').click(function() {
 				var oDiv = document.getElementById("number");
 				var oDivHtml = oDiv.innerHTML;
 				console.log(oDivHtml);
-
 				oDiv.innerHTML = oDivHtml.substring(0, oDivHtml.length - 1);
+			})
+
+			setInterval(function() {
+
+				if($("#number").text() != "" && parseFloat($("#number").text()) > 0) {
+					$('#issure').removeClass('active');
+					$('.sure_button').removeClass('active');
+					$('#issure').attr('disabled', false);
+					$('.sure_button').attr('disabled', false);
+				} else {
+
+					$('#issure').addClass('active');
+					$('.sure_button').addClass('active');
+					$('#issure').attr('disabled', true);
+					$('.sure_button').attr('disabled', true);
+				}
+
+			}, 200)
+		
+			$('#key').click(function(){
+				 $('.sure_button').css('display','block');
+                 $('.keyboard').removeClass('show').addClass('hidden');
+			})
+			$('.input').click(function(){
+				$('.sure_button').css('display','none');
+				$('.keyboard').removeClass('hidden').addClass('show');
+			})
+			
+			//确定提交
+				$('.submit').click(function(){
+				console.log($("#number").text());
 			})
 		</script>
 	</body>

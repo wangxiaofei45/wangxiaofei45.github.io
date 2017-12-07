@@ -24,34 +24,43 @@ body {
 
 .header {
   width: 8.32rem;
+  height: 1.92rem;
   min-width: 8.32rem;
   margin: 0 auto;
-  margin-top: 1.49333rem; }
+  margin-top: 1.49333rem;
+  align-items: center; }
   .header .left {
     float: left;
-    margin-right: 0.59733rem; }
-    .header .left img {
-      width: 1.81333rem;
-      height: 1.81333rem;
-      border-radius: 50%;
-      vertical-align: middle;
-      display: inline-block; }
+    margin-right: 0.59733rem;
+    width: 1.792rem;
+    height: 1.792rem;
+    border-radius: 50%;
+    margin-top: 0.064rem; }
   .header .right {
     float: left; }
     .header .right p {
       font-size: 0.68267rem;
       color: #393a3f;
-      font-weight: 700; }
-    .header .right .wraning img {
-      width: 0.68267rem;
-      height: 0.68267rem;
-      vertical-align: middle;
-      display: inline-block; }
-    .header .right .wraning span {
-      font-size: 0.512rem;
-      color: #a8a8a8; }
+      font-weight: 700;
+      height: 1.024rem;
+      line-height: 1.024rem; }
+    .header .right .wraning {
+      height: 0.896rem;
+      line-height: 0.896rem; }
+      .header .right .wraning img {
+        width: 0.68267rem;
+        height: 0.68267rem;
+        display: inline-block;
+        vertical-align: middle; }
+      .header .right .wraning span {
+        vertical-align: middle;
+        font-size: 0.512rem;
+        color: #a8a8a8; }
 
 .cursor {
+  position: absolute;
+  right: 0.32rem;
+  top: 0.64rem;
   display: inline-block;
   height: 1.70667rem;
   background: #677bff;
@@ -61,6 +70,12 @@ body {
   animation-duration: 1.1s;
   animation-iteration-count: infinite;
   animation-name: cursor; }
+
+.hidden {
+  animation: hidden 0.5s linear forwards; }
+
+.show {
+  animation: show 0.5s linear forwards; }
 
 @keyframes cursor {
   0% {
@@ -84,6 +99,16 @@ body {
     opacity: 0; }
   100% {
     opacity: 0; } }
+@keyframes hidden {
+  0% {
+    height: 11.09333rem; }
+  100% {
+    height: 0rem; } }
+@keyframes show {
+  0% {
+    height: 0rem; }
+  100% {
+    height: 11.09333rem; } }
 .input {
   width: 14.08rem;
   height: 2.98667rem;
@@ -93,13 +118,44 @@ body {
   border-radius: 0.21333rem;
   margin: 0 auto;
   margin-top: 1.28rem;
-  padding-left: 0.53333rem; }
+  padding-left: 0.53333rem;
+  padding-right: 0.53333rem;
+  position: relative;
+  text-align: right; }
+  .input #posabs {
+    height: 1.28rem;
+    line-height: 1.28rem; }
+  .input .left {
+    height: 0.85333rem;
+    line-height: 0.85333rem;
+    font-size: 0.64rem;
+    color: #999999;
+    position: absolute;
+    left: 0.53333rem;
+    top: 1.06667rem; }
 
 .keyboard {
+  z-index: 20;
+  overflow: hidden;
   width: 100%;
   position: absolute;
   bottom: 0rem;
   left: 0rem; }
+
+button:focus {
+  outline: none; }
+
+.sure_button {
+  z-index: 1;
+  width: 14.93333rem;
+  height: 2.56rem;
+  font-size: 0.85333rem;
+  background-color: #ff4965;
+  color: #FFFFFF;
+  position: absolute;
+  left: 0.53333rem;
+  bottom: 1.06667rem;
+  border-radius: 0.42667rem; }
 
 .list .num {
   width: 25%;
@@ -125,12 +181,45 @@ body {
   height: 8.32rem;
   display: table;
   font-size: 0.85333rem;
-  color: #FFFFFF;
-  background-color: #ff4965; }
-  .list .sure span {
+  color: #FFFFFF; }
+  .list .sure button {
+    width: 100%;
+    height: 100%;
+    background-color: #ff4965;
+    font-size: 0.85333rem;
+    font-weight: 700;
+    color: #FFFFFF; }
+
+.active {
+  background-color: #666666 !important; }
+
+.list > .num {
+  border-top: 0.02133rem solid #D6D6D6;
+  border-right: 0.02133rem solid #d6d6d6;
+  box-sizing: border-box; }
+
+.list > .num:last-child {
+  border-right: none; }
+
+.list > .num_con > .num {
+  border-top: 0.02133rem solid #D6D6D6;
+  border-right: 0.02133rem solid #d6d6d6;
+  box-sizing: border-box; }
+
+#remove {
+  text-align: center; }
+  #remove img {
+    width: 1.472rem;
+    height: 0.896rem;
+    display: inline-block; }
+
+#key {
+  text-align: center;
+  line-height: 2.77333rem; }
+  #key img {
+    display: inline-block;
     vertical-align: middle;
-    display: table-cell;
-    height: 1.28rem;
-    line-height: 1.28rem; }
+    width: 1.70667rem;
+    height: 1.216rem; }
 
 /*# sourceMappingURL=pay.css.map */
