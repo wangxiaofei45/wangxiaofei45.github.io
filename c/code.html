@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js"></script>
+		<script src="index.js"></script>>
+		<script src="1.js"></script>
+		<style type="text/css">
+			input[node-type=jsbridge] {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<div class="qr-btn" node-type="qr-btn">扫描二维码1
+				<input node-type="jsbridge" type="file" name="myPhoto" value="扫描二维码1" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			Qrcode.init($('[node-type=qr-btn]'));
+		});
+	</script>
+
+</html>
