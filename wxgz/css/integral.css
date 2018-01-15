@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.list_con { position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; background-image: url(../image/界面十三.png); background-repeat: no-repeat; background-size: cover; }
+
+.list_pos { width: 12.2453333333rem; position: absolute; left: 50%; margin-left: -6.1226666667rem; bottom: 1.0666666667rem; }
+
+.title { width: 100%; text-align: center; font-size: 1.3653333333rem; color: #FFFFFF; }
+
+.myintegarl { width: 12.2453333333rem; height: 4.9066666667rem; line-height: 4.9066666667rem; text-align: center; margin: 0 auto; margin-top: 1.0666666667rem; margin-bottom: 2.1333333333rem; color: #333333; font-size: 0.8533333333rem; background-color: #FFFFFF; border-radius: 0.4266666667rem; }
+
+.list { width: 12.2453333333rem; height: 1.7066666667rem; line-height: 1.7066666667rem; text-align: center; margin: 0 auto; margin-top: 0.64rem; color: #333333; font-size: 0.8533333333rem; background-color: #FFFFFF; border-radius: 0.4266666667rem; }
+
+button { margin: 0; padding: 0; list-style-type: none; border: none; }
+
+.bottom { width: 6.9333333333rem; height: 1.92rem; display: block; font-size: 0.8533333333rem; margin: 0 auto; margin-top: 2.3466666667rem; line-height: 1.92rem; background-color: #24a798; color: #FFFFFF; text-align: center; background-image: url(../image/textbutton.png); background-repeat: no-repeat; background-size: 6.9333333333rem 1.92rem; }
+
+/*# sourceMappingURL=integral.css.map */

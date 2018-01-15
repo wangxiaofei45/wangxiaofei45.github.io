@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.list_con { position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; background-image: url(../image/界面十二.png); background-repeat: no-repeat; background-size: cover; }
+
+.list_pos { width: 12.2453333333rem; position: absolute; left: 50%; margin-left: -6.1226666667rem; bottom: 1.0666666667rem; }
+
+.title { width: 100%; text-align: center; font-size: 1.3653333333rem; color: #FFFFFF; }
+
+.introduction { width: 12.2453333333rem; height: 7.68rem; margin-top: 0.64rem; color: #333333; font-size: 0.8533333333rem; background-color: #FFFFFF; border-radius: 0.2133333333rem; font-size: 0.512rem; box-sizing: border-box; padding: 0.32rem; }
+
+.introduction .text { width: 12.2453333333rem; height: 7.68rem; text-align: center; line-height: 7.68rem; font-size: 3.84rem; }
+
+.time { width: 12.2453333333rem; height: 1.7066666667rem; line-height: 1.7066666667rem; text-align: center; margin: 0 auto; margin-top: 0.64rem; color: #333333; font-size: 0.8533333333rem; background-color: #FFFFFF; border-radius: 0.2133333333rem; }
+
+.time > span:nth-child(1) { margin-right: 0.2133333333rem; }
+
+.wraning { width: 5.6746666667rem; height: 0.8533333333rem; line-height: 0.8533333333rem; text-align: center; margin: 0 auto; margin-top: 0.64rem; color: #333333; font-size: 0.4266666667rem; background-color: #FFFFFF; border-radius: 0.2133333333rem; }
+
+button { margin: 0; padding: 0; list-style-type: none; border: none; }
+
+.bottom { width: 6.9333333333rem; height: 1.92rem; display: block; font-size: 0.8533333333rem; margin: 0 auto; line-height: 1.92rem; color: #FFFFFF; text-align: center; background-image: url(../image/textbutton.png); background-repeat: no-repeat; background-size: 6.9333333333rem 1.92rem; background-color: #d75979; margin-top: 3.4133333333rem; }
+
+.sccsess { background-color: #E6390C; color: #fff100; }
+
+/*# sourceMappingURL=test_wraning.css.map */

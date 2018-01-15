@@ -1,0 +1,17 @@
+.list { width: 16rem; height: 3.2rem; margin: 0 auto; position: relative; }
+
+.list:hover { background-color: #d6d6d6; }
+
+.list img { width: 1.8773333333rem; height: 1.8773333333rem; border-radius: 50%; margin: 0rem 0.5333333333rem; }
+
+.list .texts { width: 11.9893333333rem; height: 3.2rem; border-bottom: 0.0213333333rem solid #D6D6D6; }
+
+.list .texts .left { width: 9.856rem; }
+
+.list .texts .left .title { font-size: 0.9386666667rem; color: #333; }
+
+.list .texts .left .explain { margin-top: 0.32rem; font-size: 0.5973333333rem; color: #737373; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.list .texts .right { width: 2.1333333333rem; font-size: 0.5973333333rem; color: #666666; text-align: right; }
+
+/*# sourceMappingURL=text_list.css.map */

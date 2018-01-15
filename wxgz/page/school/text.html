@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>文章</title>
+		<link rel="stylesheet" type="text/css" href="../../css/Thearticle.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+		<script src="../../js/hotcss.js"></script>
+		<script src="../../js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div id="text_container">
+			<div class="container">
+				<div class="header">
+					<h2>
+			    《深度解读19大精神》
+			</h2>
+				</div>
+				<!--跳转到党建专栏-->
+				<div class="text">
+					<img src="../../img/19.jpg" />
+					<div class="text_up">
+						深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神深度解读19大精神
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部固定-->
+		<div class="time">
+			<span>累计阅读</span>
+			<input type="text" id="timetext" value="00时00分00秒" readonly><br>
+<!--			<button type="button" onclick="start()">开始</button> <button type="button" onclick="stop()">暂停</button> <button type="button" onclick="Reset()">重置</button>-->
+		</div>
+		<script>
+				var hour, minute, second; //时 分 秒
+				hour = minute = second = 0; //初始化
+				var int;
+				function Reset() //重置
+				{
+					window.clearInterval(int);
+					hour = minute = second = 0;
+					document.getElementById('timetext').value = '00时00分00秒000毫秒';
+				}
+
+			   var start = function() //开始
+				{
+					int = setInterval(timer, 1000);
+				}
+                start();
+				function timer() //计时
+				{
+					second = second + 1;
+					if(second >= 60) {
+						second = 0;
+						minute = minute + 1;
+					}
+
+					if(minute >= 60) {
+						minute = 0;
+						hour = hour + 1;
+					}
+					document.getElementById('timetext').value = translation(hour) + '时' + translation(minute) + '分' + translation(second) + '秒';
+				}
+				function stop() //暂停
+				{
+					window.clearInterval(int);
+				}
+				function translation(i){
+					if(i<10){
+						return '0'+i;
+					}else{
+						return i;
+					}
+					return i.toString();
+				}
+		</script>
+</html>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.list_con {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-image: url(../image/界面三.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.list_pos {
+  width: 12.24533rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.12267rem;
+  bottom: 1.06667rem; }
+
+.title {
+  width: 12.24533rem;
+  position: relative;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 0.32rem;
+  margin-bottom: 1.28rem; }
+
+.title > p:nth-child(1) {
+  font-size: 1.36533rem; }
+
+.title > p:nth-child(2) {
+  color: #FFFFFF;
+  font-size: 0.34133rem; }
+
+.title img {
+  width: 1.408rem;
+  height: 0.93867rem;
+  position: absolute;
+  right: 0.32rem;
+  bottom: 0.32rem; }
+
+.list {
+  width: 12.24533rem;
+  height: 2.56rem;
+  margin-top: 0.64rem; }
+
+.list .left {
+  width: 12.24533rem;
+  height: 2.56rem;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 0.32rem;
+  font-size: 0.85333rem;
+  color: #333333; }
+
+/*# sourceMappingURL=skills.css.map */

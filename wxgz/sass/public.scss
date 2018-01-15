@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+@font-face {
+    font-family: 'MyNewFont';
+    src: url('../font/方正兰亭纤黑_GBK.TTF');
+}
+
+body {
+    font-family: 'MyNewFont';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    width: px2rem(750);
+    background-color: #FFFFFF;
+}
+
+//不换行
+.flex-around {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-start {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+//换行
+.flex-start-wrap {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}

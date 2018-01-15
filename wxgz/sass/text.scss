@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+.list_con{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-image: url(../image/界面十二.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list_pos{
+    width: px2rem(574);
+    position: absolute;
+    left: 50%;
+    margin-left: px2rem(-287);
+    bottom: px2rem(50);
+}
+.title{
+    width: 100%;
+    font-size: px2rem(40);
+    padding: 0px px2rem(15);
+    color: #FFFFFF;
+}
+.time{
+      width: px2rem(574);
+    min-height: px2rem(80);
+    padding: px2rem(0) px2rem(15);
+    line-height: px2rem(80);
+    margin: 0 auto;
+    margin-top: px2rem(30);
+    color: #333333;
+    font-size: px2rem(40);
+    background-color: #FFFFFF;
+    border-radius: px2rem(10);
+}
+
+button{ 
+    margin:0; 
+    padding:0; 
+    list-style-type:none;
+    border: none;
+    }
+.bottom{
+    width: px2rem(325);
+    height: px2rem(90);
+    display: block;
+    font-size: px2rem(40);
+    margin: 0 auto;
+    margin-top: px2rem(88);
+    line-height: px2rem(90);
+    background-color: #d75979;
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(../image/textbutton.png);
+    background-repeat: no-repeat;
+    background-size: px2rem(325) px2rem(90);
+}
+

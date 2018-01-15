@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.list_con { position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; background-image: url(../image/界面十三.png); background-repeat: no-repeat; background-size: cover; }
+
+.list_pos { width: 12.2453333333rem; position: absolute; left: 50%; margin-left: -6.1226666667rem; bottom: 1.0666666667rem; }
+
+.title { width: 100%; text-align: center; font-size: 1.3653333333rem; color: #FFFFFF; margin-bottom: 1.28rem; }
+
+.myintegarl { width: 12.2453333333rem; height: 4.9066666667rem; line-height: 4.9066666667rem; text-align: center; margin: 0 auto; margin-top: 1.0666666667rem; margin-bottom: 2.1333333333rem; color: #333333; font-size: 0.8533333333rem; background-color: #FFFFFF; border-radius: 0.4266666667rem; }
+
+.list { width: 12.2453333333rem; height: 2.56rem; line-height: 1.7066666667rem; text-align: center; margin: 0 auto; margin-top: 0.64rem; color: #333333; font-size: 0.8533333333rem; background-color: #FFFFFF; border-radius: 0.4266666667rem; }
+
+.list .left { width: 9.6853333333rem; height: 2.56rem; line-height: 2.56rem; text-align: center; color: #333333; }
+
+.list .left:nth-child(1) { margin-right: 0.7466666667rem; }
+
+.list .right { width: 2.56rem; height: 2.56rem; line-height: 2.56rem; font-size: 0.8533333333rem; color: #FFFFFF; text-align: center; background-color: #24a798; background-image: url(../image/bgR.png); background-size: 2.56rem 2.56rem; background-repeat: no-repeat; }
+
+.wraning { width: 100%; color: #333333; font-size: 0.5973333333rem; text-align: center; margin-top: 1.92rem; }
+
+button { margin: 0; padding: 0; list-style-type: none; border: none; }
+
+.bottom { width: 6.9333333333rem; height: 1.92rem; display: block; font-size: 0.8533333333rem; margin: 0 auto; margin-top: 0.64rem; line-height: 1.92rem; background-color: #24a798; color: #FFFFFF; text-align: center; background-image: url(../image/textbutton.png); background-repeat: no-repeat; background-size: 6.9333333333rem 1.92rem; }
+
+/*# sourceMappingURL=conversion.css.map */

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+.list_con{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-image: url(../image/界面二.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_pos{
+    position: absolute;
+    left: px2rem(28);
+    top: 28%;
+    width: px2rem(200);
+    height: px2rem(200);
+}
+.list_pos{
+    width: px2rem(574);
+    position: absolute;
+    left: 50%;
+    margin-left: px2rem(-287);
+    bottom: px2rem(50);
+}
+.title{
+    width: px2rem(574);
+    position: relative;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: px2rem(15);
+    margin-bottom: px2rem(60);
+}
+.title>p:nth-child(1){
+    font-size: px2rem(64);
+}
+.title>p:nth-child(2){
+    color: #FFFFFF;
+    font-size: px2rem(16);
+    
+}
+.title img{
+    width: px2rem(44);
+    height: px2rem(44);
+     position: absolute;
+    right: px2rem(15);
+    bottom: px2rem(15);
+}
+.list {
+    width: px2rem(574);
+    height: px2rem(120);
+    margin-top: px2rem(30);
+}
+.list .left{
+    width: px2rem(574);
+    height: px2rem(120);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding: px2rem(15);
+    font-size: px2rem(40);
+    color: #333333;
+}

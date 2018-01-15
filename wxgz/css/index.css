@@ -1,0 +1,37 @@
+.list_con { position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: #1c3d78; }
+
+.box { width: 16rem; height: 12.416rem; position: relative; overflow: hidden; }
+
+.box .zhangshiul { position: relative; height: 6.4rem; }
+
+.box .zhangshiul li { position: absolute; left: 0px; top: 0px; list-style: none; width: 16rem; height: 12.416rem; }
+
+.box .zhangshiul li img { width: 16rem; height: 12.416rem; }
+
+.indicate { width: 4.2666666667rem; height: 0.64rem; position: absolute; right: 0.2133333333rem; bottom: 0.64rem; }
+
+.indicate .gundongul { width: 4.2666666667rem; height: 0.64rem; }
+
+.indicate .gundongul li { list-style: none; width: 0.64rem; height: 0.64rem; border-radius: 50%; background-color: #FFFFFF; }
+
+.box .gundongul .active { background-color: #7B68EE; }
+
+.navigation { margin: 0 auto; width: 14.208rem; margin-top: 0.8533333333rem; }
+
+.navigation .left { width: 7.7226666667rem; height: 6.208rem; color: #ffffff; box-sizing: border-box; padding: 0.32rem; position: relative; background-image: url(../image/bg.png); background-size: 6.208rem 6.208rem; background-repeat: no-repeat; }
+
+.navigation .right { width: 6.208rem; height: 6.208rem; color: #FFFFFF; box-sizing: border-box; padding: 0.32rem; position: relative; background-image: url(../image/bg.png); background-size: 6.208rem 6.208rem; background-repeat: no-repeat; }
+
+.left1 { background-color: #f4dd78; }
+
+.left2 { background-color: #8B008B; }
+
+.right1 { background-color: #008B00; }
+
+.right2 { background-color: #FF7F00; }
+
+.navigation .right img { width: 1.7066666667rem; height: 1.7066666667rem; position: absolute; right: 0.32rem; bottom: 0.32rem; }
+
+.navigation .left img { width: 1.7066666667rem; height: 1.7066666667rem; position: absolute; right: 0.32rem; bottom: 0.32rem; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import '_px2rem';
+$designWidth: 750;
+.list_con{
+   position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #1c3d78;
+}
+.box {
+    width: px2rem(750);
+    height: px2rem(582);
+    position: relative;
+    overflow: hidden;
+}
+
+.box .zhangshiul {
+    position: relative;
+    height: px2rem(300);
+}
+
+.box .zhangshiul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    list-style: none;
+    width: px2rem(750);
+    height: px2rem(582);
+}
+
+.box .zhangshiul li img {
+    width: px2rem(750);
+    height: px2rem(582);
+}
+
+//指示点
+.indicate {
+    width: px2rem(200);
+    height: px2rem(30);
+    position: absolute;
+    right: px2rem(10);
+    bottom: px2rem(30);
+}
+
+.indicate .gundongul {
+    width: px2rem(200);
+    height: px2rem(30);
+}
+
+.indicate .gundongul li {
+    list-style: none;
+    width: px2rem(30);
+    height: px2rem(30);
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.box .gundongul .active {
+    background-color: #7B68EE;
+}
+
+//banner结束
+.navigation {
+    margin: 0 auto;
+    width: px2rem(666);
+    margin-top: px2rem(40);
+}
+
+.navigation .left {
+    width: px2rem(362);
+    height: px2rem(291);
+    color:#ffffff;
+    box-sizing: border-box;
+    padding: px2rem(15);
+    position: relative;
+    background-image: url(../image/bg.png);
+    background-size: px2rem(291) px2rem(291);
+    background-repeat: no-repeat;
+
+}
+.navigation .right {
+    width: px2rem(291);
+    height: px2rem(291);
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: px2rem(15);
+    position: relative;
+     background-image: url(../image/bg.png);
+    background-size: px2rem(291) px2rem(291);
+    background-repeat: no-repeat;
+}
+.left1{
+    background-color: #f4dd78;
+}
+.left2{
+    background-color: #8B008B;
+}
+.right1{
+    background-color: #008B00;
+}
+.right2{
+    background-color: #FF7F00;
+}
+.navigation .right img{
+    width: px2rem(80);
+    height: px2rem(80);
+    position: absolute;
+    right: px2rem(15);
+    bottom: px2rem(15);
+}
+.navigation .left img{
+    width: px2rem(80);
+    height: px2rem(80);
+    position: absolute;
+    right: px2rem(15);
+    bottom: px2rem(15);
+}
