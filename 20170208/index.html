@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" src="convert.js"></script>
+</head>
+<body>
+	<label id="latitude"></label>
+	<br>
+	<label id="longtitude"></label>
+	<script type="text/javascript">
+		// 判断是否支持获取获取用户的位置信息
+		window.onload = function(){
+			if(navigator.geolocation){
+				console.log('ok')
+			}else {
+				return;
+			}
+			navigator.geolocation.getCurrentPosition(showPosition,errorHandle,{timeout:10000});
+			function showPosition(position){
+                var lat = position.coords.latitude;
+                var lng = position.coords.longitude;
+                
+				
+                // 把获取的经纬度信息进行计算
+                var lng1 = wgs84togcj02(lng,lat)[0];
+                var lat1 = wgs84togcj02(lng,lat)[1];
+                
+                var lng2 = gcj02tobd09(lng,lat)[0];
+                var lat2 = gcj02tobd09(lng,lat)[1];
+
+                document.getElementById('latitude').innerHTML = lat2;
+                document.getElementById('longtitude').innerHTML = lng2;
+				alert(lat2,lng2);
+			}
+			function errorHandle(error){
+				alert(error.message);
+                console.log("error",error);                                                                
+			}
+		}
+	</script>
+</body>
+</html>

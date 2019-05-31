@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- 他是一个可以访问作用域中的变量的一个函数
+	     1 是一个函数
+	     2 可以访问其他作用域中的变量或函数
+	      -->
+	<!-- 作用域 
+	      1 全局作用域 在任何函数之外定义的变量或者函数
+	      2 局部作用域 在函数内部定义的变量或函数-->
+    <script type="text/javascript">
+	    var mytest = 123;
+	    function mytestFunction(){
+            var num = 10 ;
+
+            function innerFunction(){
+            	// 局部作用域
+            	var innerNum3 = 20;
+            	console.log(num);
+            	// 内部的可以访问外部的，但是外部的不能访问内部的
+            }
+            return innerFunction;
+	    }   
+	    var fun = mytestFunction();  
+
+	    // 闭包的使用
+	    fun(); 	
+
+	    // 一个作用域可以访问包含他的作用域中的内容，依次类推，直到全局作用域，形成的链条叫做作用域链，访问现在的作用域时，沿着作用域链一致向外找，直到全局作用域
+	    function testFunc1(){
+	    	var num = 100;
+	    	return function(){
+	    		console.log(num);
+	    	}
+	    }
+	    var fn = testFunc1();
+	    fn();
+	    // 解除对闭包的使用，这时闭包中访问的变量才会被释放
+	    fn = null;
+        
+        // 闭包访问的外部作用域中的变量，只能使用它最后的值
+	    function mytest2(){
+	    	var result = new Array();
+	    	for(var i = 0;i<10;i++){
+	    		result[i] = function(){
+	    			return i;
+	    		}
+	    	}
+	    	return result;
+	    }
+
+	    var r = mytest2();
+	    for(var j=0;j<r.length;j++){
+	    	var returnValue = r[j]();
+	    	console.log(returnValue);
+	    }
+
+	    function mytest3(){
+	    	var result = new Array();
+	    	for(var i = 0;i<10;i++){
+	    		result[i] = function(num){
+	    			return function(){
+	    				return num;
+	    			}
+	    		}(i)
+	    	}
+	    	return result;
+	    }
+        
+        var r2 = mytest3();
+        for(var j = 0;j<r2.length;j++){
+            var returnValue = r2[j]();
+            console.log(returnValue);
+        }
+	    
+	</script>
+</body>
+</html>
